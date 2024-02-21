@@ -9,31 +9,72 @@
 /* css reset end */
 
 /* applying this so can style childrens can take 100% of parent width and height */
+
+/* univeral styles */
 body,
-html,
-main {
+html {
   width: 100%;
   height: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  font-size: 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
+/* univeral styles end */
+
 /* utilities */
+.font-normal {
+  font-size: 1rem;
+}
+
+.button.only-gray-border {
+  background-color: transparent;
+  border: 1px solid gray;
+}
+
+.button.only-gray-border:hover {
+  background-color: gray;
+}
 
 /* utilities end */
 
 /* page - 1 section 1 */
 .page-1-section-1 {
+  color: white;
   min-height: 100vh;
+  position: relative;
+}
+
+.bg-overlay {
+  position: absolute;
   background-image: url("../public/images/page-1-section-1-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
 }
 
 /* nav  */
 nav {
-  border: 2px solid darkred;
   max-height: 100px;
   padding-inline: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  color: white;
+  z-index: 3;
+  position: relative;
+}
+
+nav a {
+  color: white;
 }
 
 .nav-logo {
@@ -42,18 +83,131 @@ nav {
 }
 
 .nav-logo img {
+  cursor: pointer;
   aspect-ratio: 1/1;
   width: 100%;
   height: 100%;
 }
 
-/* nav  end*/
+nav .nav-links-list {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  list-style-type: none;
+}
+
+.nav-items-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-cart-item-wrapper {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.button {
+  padding-inline: 14px;
+  padding-block: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+}
+
+.button.sign-in {
+  background-color: transparent;
+  border: 1px solid gray;
+}
+
+.button.sign-in:hover {
+  background-color: gray;
+}
+
+.button.log-in {
+  background-color: #ffa500;
+}
+
+.button.log-in:hover {
+  background-color: #ffa600df;
+}
+
+/* nav  end */
+
+.page-1-section-1-container {
+  position: relative;
+  display: flex;
+  margin-top: 8%;
+  z-index: 2;
+}
+
+.page-1-section-1-container-col {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px;
+}
+
+.extra-container-margin-left {
+  margin-left: 20px;
+}
+
+.page-1-section-1-heading {
+  color: #d16e43;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.page-1-section-1-content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.page-1-section-1-content-wrapper.width-normal {
+  width: 100%;
+}
+
+.page-1-section-1-content-wrapper p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.page-1-section-1-content-wrapper.width-normal p {
+  font-size: 1.1rem;
+}
+.page-1-section-1-container-col .cta-btn-md {
+  margin-top: 20px;
+  width: 35%;
+  padding-inline: 10px;
+  padding-block: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid gray;
+}
+
+.page-1-section-1-container-col .cta-btn-md:hover {
+  background-color: gray;
+}
+
+.page-1-section-1-container-carousel {
+  border: 1px solid honeydew;
+  padding: 10px;
+}
 
 /* page - 1 section 1 end */
 
 /* media breakpoints */
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  /* page - 1 section - 1  */
+  /* nav */
   nav {
     padding-inline: 10px;
   }
@@ -61,5 +215,77 @@ nav {
     width: 94px;
     height: 65px;
   }
+
+  nav .nav-links-list {
+    display: none;
+  }
+
+  .nav-items-list {
+    display: none;
+  }
+
+  /* nav end */
+
+  .page-1-section-1 {
+    background-color: #b38e5f;
+  }
+
+  .bg-overlay {
+    max-height: 68vh;
+  }
+
+  .page-1-section-1-container {
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
+  .page-1-section-1-container-col {
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .page-1-section-1-container-col.margin-t-sm {
+    margin-top: 10%;
+  }
+
+  .page-1-section-1-heading {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .page-1-section-1-content-wrapper {
+    width: 100%;
+  }
+
+  .page-1-section-1-content-wrapper p {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  .page-1-section-1-content-wrapper.width-normal p {
+    font-size: 1rem;
+  }
+
+  .extra-container-margin-left h2 {
+    text-align: left;
+  }
+
+  .extra-container-margin-left {
+    margin-left: 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .page-1-section-1-container-col .cta-btn-md {
+    margin-top: 10px;
+    margin-inline: auto;
+  }
+
+  /* page - 1 section - 1 end  */
+
+  
 }
 /* media breakpoints end */
