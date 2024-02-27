@@ -77,6 +77,10 @@ nav a {
   color: white;
 }
 
+.nav-active-link {
+  border-bottom: 2px solid white;
+}
+
 .nav-logo {
   width: 130px;
   height: 80px;
@@ -224,7 +228,9 @@ nav .nav-links-list {
 
 .page-1-section-2-container {
   display: flex;
-  align-items: end;
+  /* align-items: end; */
+  align-items: center;
+  /* align-items: start; */
   gap: 20px;
 }
 
@@ -233,7 +239,9 @@ nav .nav-links-list {
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 35px;
 }
 
 .page-1-section-2-col:nth-child(2) {
@@ -439,6 +447,140 @@ textarea {
 
 /* main container end */
 
+/* page -2 section 1 */
+/* main container */
+.page-2-main-container {
+  background-color: #251a17;
+  min-height: 100vh;
+}
+/* nav */
+.nav-search-input {
+  width: 14%;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-inline: 10px;
+  padding-block: 5px;
+}
+
+.nav-search-input-field {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.search-icon {
+  color: black;
+  font-size: 1rem;
+}
+/* nav end */
+
+/* page - 2 section 1 */
+.page-2-section-1 {
+  min-height: 100vh;
+  border: 1px solid aqua;
+  margin-top: 8%;
+  padding: 20px;
+}
+
+.hero-cafe-logo {
+  /* by changing width i can inscrease size of image inside this div */
+  width: 70%;
+  margin: 0 auto;
+}
+
+.hero-cafe-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.page-2-section-1-container {
+  width: 95%;
+  margin: 20px auto;
+  border: 1px solid darkorchid;
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.page-2-section-1-container-col {
+  padding-inline: 10px;
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-left: 1px solid rgba(255, 255, 255, 0.88);
+  border-right: 1px solid rgba(255, 255, 255, 0.88);
+}
+.col-cover-img {
+  /* border: 1px solid firebrick; */
+  /* padding: 10px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-cover-img img {
+  aspect-ratio: 1/1;
+  width: 60%;
+  object-fit: cover;
+}
+.col-menu-name {
+  /* border: 1px solid firebrick; */
+  padding: 10px;
+  background-color: #d16e43;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+}
+.col-menu-items {
+  padding-inline: 8px;
+}
+
+.menu-item {
+  /* padding: 10px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.item-col {
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.item-col:nth-child(1) p {
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.item-col:nth-child(2) p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.item-col:nth-child(2) span {
+  font-weight: bold;
+}
+
+.item-col:nth-child(2) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.88);
+}
+
+/* page - 2 section 1 end */
+
+/* main container end */
+
 /* footer */
 footer {
   min-height: 30vh;
@@ -585,6 +727,12 @@ footer .col {
   /* page 1 section 2 */
   .page-1-section-2-container {
     flex-direction: column-reverse;
+    /* align-items: center; */
+  }
+
+  .page-1-section-2-bg {
+    /* width: 85%; */
+    max-width: max(40%, 60%, 70%);
   }
 
   .page-1-section-2 h2 {
@@ -606,6 +754,7 @@ footer .col {
   /* page 1 section 2 end */
 
   /* page 1 section 3  */
+
   /* page 1 section 3 end */
 
   /* page 1 section 4 */
@@ -626,15 +775,18 @@ footer .col {
   }
   /* page 1 section 6 end */
 
-  /* footer */
-  /* footer {
-    display: flex;
+  /* page 2 section 1 */
+  .page-2-section-1-container {
     flex-direction: column;
-  } */
+  }
 
-  /* footer .col {
-    border-bottom: 1px solid white;
-  } */
+  .page-2-section-1-container-col {
+    padding: 10px;
+  }
+
+  /* page 2 section 1 end */
+
+  /* footer */
 
   footer .col:nth-child(1) {
     flex-direction: column;
@@ -656,3 +808,10 @@ footer .col {
   /* footer end */
 }
 /* media breakpoints end */
+
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+  /* page 1 section 2 */
+  /* .page-1-section-2-container {
+    align-items: center;
+  } */
+}
