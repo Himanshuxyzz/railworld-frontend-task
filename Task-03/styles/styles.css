@@ -910,16 +910,95 @@ textarea {
 
 .see-more-menu-slider {
   padding-block: 20px;
-  border: 1px solid gold;
   width: 95%;
   margin: 0 auto;
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 2%;
+}
+
+.see-more-menu-slider .icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 150px;
+  color: white;
+}
+
+.icon.icon-left {
+  display: none;
+  left: -10px;
+
+  padding-left: 1rem;
+}
+
+.icon.icon-right {
+  right: -10px;
+  padding-right: 1rem;
+  justify-content: flex-end;
+  background: linear-gradient(to left, var(--light) 55%, transparent);
+}
+
+.icon i {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.2s ease;
+}
+
+.icon i:hover {
+  background-color: #dfdfdf;
+}
+
+.see-more-menu-slider .tabs {
+  display: flex;
+  gap: 20px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  list-style: none;
+  position: relative;
+  z-index: 9999;
+  /* cursor: pointer; */
+}
+
+.tabs.drag {
+  scroll-behavior: auto;
+  cursor: grab;
+}
+
+.tabs .tab {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: white;
+  white-space: nowrap;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tabs.drag .tab {
+  pointer-events: none;
+  user-select: none;
+}
+
+.tab.active {
+  color: #ffaf40;
+  border: 1px solid #ffaf40;
 }
 
 .see-more-container {
-  /* border: 1px solid green; */
   width: 95%;
   margin: 0 auto;
-  /* padding: 10px; */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -1383,6 +1462,10 @@ footer .col {
     padding: 10px;
   }
 
+  .see-more-menu-slider {
+    width: 100%;
+  }
+
   .item-row:nth-child(2) img {
     display: block;
   }
@@ -1405,6 +1488,7 @@ footer .col {
 
   .see-more-container {
     flex-direction: column;
+    width: 100%;
   }
 
   /* page 2 section 2 see more section end */
