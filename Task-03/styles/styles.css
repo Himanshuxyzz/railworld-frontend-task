@@ -40,6 +40,14 @@ a {
   background-color: gray;
 }
 
+.bg-top {
+  object-position: top;
+}
+
+.bg-center {
+  object-position: center;
+}
+
 /* utilities end */
 
 /* page - 1 section 1 */
@@ -890,7 +898,7 @@ textarea {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  object-position: top;
+  /* object-position: top; */
 }
 
 /* page 2 section 1 see more end  */
@@ -961,7 +969,7 @@ textarea {
 
 .see-more-menu-slider .tabs {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   overflow-x: hidden;
   scroll-behavior: smooth;
   list-style: none;
@@ -976,9 +984,14 @@ textarea {
 }
 
 .tabs .tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs .tab a {
+  padding: 0.5rem 0.5rem;
   font-size: 1rem;
-  font-weight: 500;
-  padding: 0.5rem 1rem;
   border-radius: 10px;
   color: white;
   white-space: nowrap;
@@ -991,7 +1004,7 @@ textarea {
   user-select: none;
 }
 
-.tab.active {
+.tab.active a {
   color: #ffaf40;
   border: 1px solid #ffaf40;
 }
@@ -999,10 +1012,13 @@ textarea {
 .see-more-container {
   width: 95%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: space-between;
-  gap: 20px;
+  /* align-items: center; */
+  gap: 30px;
 }
 
 .see-more-container-item {
@@ -1010,8 +1026,8 @@ textarea {
 }
 
 .item-name-type {
-  min-width: 30%;
-  max-width: 60%;
+  min-width: 40%;
+  max-width: 65%;
   margin: 0 auto;
   background-color: #d16e43;
   border-radius: 20px;
@@ -1089,13 +1105,22 @@ textarea {
   width: 100%;
 }
 
-.item-row p:nth-child(2) {
+.item-row:nth-child(1) p:nth-child(2),
+p:nth-child(3) {
   color: #f6fa11;
   font-weight: bolder;
   font-size: 1.1rem;
 }
 .item-row:nth-child(1) {
   flex-basis: 80%;
+}
+
+.item-row ul {
+  margin-left: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .item-row:nth-child(2) {
@@ -1169,6 +1194,10 @@ textarea {
   outline: gray;
 }
 
+.value-combo {
+  grid-template-columns: 1fr;
+}
+
 .down-arrow {
   width: 100px;
   margin: 0 auto;
@@ -1178,6 +1207,12 @@ textarea {
 .down-arrow svg {
   font-size: 1.4rem;
   background-color: transparent;
+}
+
+.value-combo-text {
+  font-size: 1.2rem;
+  text-align: center;
+  color: red;
 }
 
 /* page 2 section 2 see more end  */
@@ -1487,7 +1522,8 @@ footer .col {
   }
 
   .see-more-container {
-    flex-direction: column;
+    /* flex-direction: column; */
+    grid-template-columns: 1fr;
     width: 100%;
   }
 

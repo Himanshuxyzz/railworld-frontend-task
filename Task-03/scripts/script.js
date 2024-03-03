@@ -27,6 +27,22 @@ const removeActive = () => {
   activeTab.classList.remove("active");
 };
 
+// function to ensure the active tab is always visible
+const ensureActiveTabVisible = () => {
+  let activeTab = tabsContainer.querySelector(".active");
+
+  if (!activeTab) return;
+
+  let tabPosition = activeTab.getBoundingClientRect();
+  let containerPosition = tabsContainer.getBoundingClientRect();
+
+  if (tabPosition.left < containerPosition.left) {
+    tabsContainer.scrollLeft -= containerPosition.left - tabPosition.left;
+  } else if (tabPosition.right > containerPosition.right) {
+    tabsContainer.scrollLeft += tabPosition.right - containerPosition.right;
+  }
+};
+
 //looping through all tabs
 tabs.forEach((tab) => {
   //adding click event listener to each tab
@@ -35,6 +51,8 @@ tabs.forEach((tab) => {
     removeActive();
     //adding 'active' class to current tab
     tab.classList.add("active");
+  tabsContainer.scrollLeft += 150;
+  ensureActiveTabVisible()
   });
 });
 
@@ -55,6 +73,7 @@ const right = () => {
   //handling left and right arrow icons
   setTimeout(() => toggleIcons(), 40);
 };
+
 
 //function to handle left and right arrows icons
 const toggleIcons = () => {
@@ -82,3 +101,5 @@ tabsContainer.addEventListener("mousedown", () => (isTabsDragging = true));
 tabsContainer.addEventListener("mousemove", drag);
 //stop dragging on mouse button is left
 document.addEventListener("mouseup", stop);
+
+ensureActiveTabVisible()
