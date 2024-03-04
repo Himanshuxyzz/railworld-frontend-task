@@ -1219,6 +1219,46 @@ p:nth-child(3) {
 
 /* main container end */
 
+/* cart page */
+
+/* cart-page-container */
+.cart-page-container {
+  background-color: #1f1f1f;
+  min-height: 100vh;
+}
+
+.cart-section-container {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 4%;
+  border: 1px solid darkorange;
+}
+/* cart-page-container end */
+
+/* cart page end */
+
+/* contact page */
+.contact-page-container {
+  background-color: #161210;
+  min-height: 100vh;
+  color: white;
+}
+
+.contact-section-container {
+  margin-top: 5%;
+}
+.contact-heading-text {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid greenyellow;
+}
+
+.contact-heading-text h2 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+/* contact page end */
+
 /* footer */
 footer {
   min-height: 30vh;
