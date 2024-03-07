@@ -1471,9 +1471,24 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-block: 4%;
 }
 
 .meals-carousel {
+  padding: 10px;
+  border: 1px solid rgb(54, 147, 0);
+  min-height: 20vh;
+}
+
+.cart-items-recently-ordered {
+  padding: 10px;
+  border: 1px solid rgb(54, 147, 0);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recently-ordered-carousel {
   padding: 10px;
   border: 1px solid rgb(54, 147, 0);
   min-height: 20vh;
@@ -1554,7 +1569,48 @@ textarea {
   flex-direction: column;
   gap: 20px;
   margin-block: 20px;
+  padding-inline: 20px;
+}
 
+.offer-wrapper button {
+  padding: 15px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.cart-price-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.price-detail-wrapper {
+  background-color: rgba(217, 217, 217, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline: 20px;
+  padding-block: 10px;
+}
+
+.grand-total-wrap {
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.grand-total-wrap button {
+  background-color: #d9d9d9;
+  border: 0;
+  width: 100%;
+  padding: 15px;
+  font-weight: bold;
 }
 
 /* cart page end */
