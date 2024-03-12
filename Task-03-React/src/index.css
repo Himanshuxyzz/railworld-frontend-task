@@ -1,0 +1,31 @@
+/* css reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* css reset end */
+
+/* applying this so can style childrens can take 100% of parent width and height */
+
+/* global styles */
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* global styles end */
+
+.main-container {
+  min-height: 100vh;
+}
