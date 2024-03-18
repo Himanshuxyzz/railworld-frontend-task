@@ -1,10 +1,9 @@
 import React from "react";
-import EmblaCarousel from "../../components/Carousel";
 
 const Menu = () => {
   return (
     <>
-      <EmblaCarousel />
+      <h1>Menu</h1>
     </>
   );
 };
