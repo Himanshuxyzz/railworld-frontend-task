@@ -3,6 +3,7 @@ import { NavBar } from "../../components/Header";
 import { Link } from "react-router-dom";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
 import Carousel from "../../components/Carousel";
+import { formatInInr } from "../../utils/utils";
 
 const CarouselData = [
   {
@@ -38,6 +39,50 @@ const CarouselData = [
         coupon_code: "RTH23",
         imgSrc: "/images/page-1-section-3-carousel-2.png",
       },
+      {
+        flat_discount: "75",
+        on_order_above: "399",
+        coupon_code: "FGU87",
+        imgSrc: "/images/page-1-section-3-carousel-1.png",
+      },
+      {
+        flat_discount: "100",
+        on_order_above: "599",
+        coupon_code: "RTH23",
+        imgSrc: "/images/page-1-section-3-carousel-2.png",
+      },
+      {
+        flat_discount: "75",
+        on_order_above: "399",
+        coupon_code: "FGU87",
+        imgSrc: "/images/page-1-section-3-carousel-1.png",
+      },
+      {
+        flat_discount: "100",
+        on_order_above: "599",
+        coupon_code: "RTH23",
+        imgSrc: "/images/page-1-section-3-carousel-2.png",
+      },
+    ],
+  },
+  {
+    "section-5-carousel": [
+      {
+        testimonial:
+          "I just had the best time at Sunset Cafe! It was so cozy and welcoming. The coffee smelled amazing, and the people there were so friendly. The food? Delicious! I can't wait to go back again and again. It's definitely my new favorite spot!",
+      },
+      {
+        testimonial:
+          "I just had the best time at Sunset Cafe! It was so cozy and welcoming. The coffee smelled amazing, and the people there were so friendly. The food? Delicious! I can't wait to go back again and again. It's definitely my new favorite spot!",
+      },
+      {
+        testimonial:
+          "I just had the best time at Sunset Cafe! It was so cozy and welcoming. The coffee smelled amazing, and the people there were so friendly. The food? Delicious! I can't wait to go back again and again. It's definitely my new favorite spot!",
+      },
+      {
+        testimonial:
+          "I just had the best time at Sunset Cafe! It was so cozy and welcoming. The coffee smelled amazing, and the people there were so friendly. The food? Delicious! I can't wait to go back again and again. It's definitely my new favorite spot!",
+      },
     ],
   },
 ];
@@ -46,9 +91,22 @@ const CarouselData = [
 //   console.log(data);
 // });
 
-CarouselData[1]["section-3-carousel"].map((data) => {
-  console.log(data);
+// CarouselData[1]["section-3-carousel"].map((data) => {
+//   console.log(data);
+// });
+
+function getCurrentScreen() {
+  const screenWidth = window.innerWidth;
+  return screenWidth;
+}
+
+window.addEventListener("resize", () => {
+  let width = getCurrentScreen();
+  console.log(`Current screen width is ${width}px`);
 });
+
+const initialScreenWidth = getCurrentScreen();
+console.log(`Initial screen width is ${initialScreenWidth}px`);
 
 const Home = () => {
   const settings = {
@@ -57,7 +115,28 @@ const Home = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 319,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   };
+
+  const settings_2 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    nextArrow: false,
+  };
+
   return (
     <>
       {/* section - 1 */}
@@ -141,7 +220,7 @@ const Home = () => {
           <div className="page-1-section-2-col">
             <img
               className="page-1-section-2-bg"
-              src="/page-1-section-2-bg.jpg"
+              src="/images/about-section-cover-2.jpeg"
               alt=""
             />
           </div>
@@ -153,17 +232,29 @@ const Home = () => {
 
       <section className="page-1-section-3">
         <h2 className="page-1-section-3-heading">DEALS AND OFFERS</h2>
-        <Carousel>
+        <Carousel settings={settings_2}>
           {CarouselData[1]["section-3-carousel"].map((data, index) => {
-            // console.log(data);
             return (
               <div
                 className="section-3-carousel-card"
                 key={Math.floor(Math.random() * index + index * Math.SQRT2)}
               >
                 <div className="section-3-carousel-card-wrap">
-                  <div></div>
-                  <div></div>
+                  <div className="section-3-carousel-card-wrap-content">
+                    <div className="desc-wrap">
+                      <h3>Flat</h3>
+                      <h2>{formatInInr(data.flat_discount)} OFF</h2>
+                    </div>
+                    <h3>ON ORDER ABOVE {formatInInr(data.on_order_above)}</h3>
+                    <div className="coupon-wrap">
+                      <p>
+                        USE CODE <span>{data.coupon_code}</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="section-3-carousel-card-wrap-content">
+                    <img src={data.imgSrc} alt={`image - ${index}`} />
+                  </div>
                 </div>
               </div>
             );
@@ -224,7 +315,24 @@ const Home = () => {
       {/* <!-- section 4 end  --> */}
 
       {/* <!-- section 5  --> */}
-      <section className="page-1-section-5"></section>
+      <section className="page-1-section-5">
+        <h2 className="page-1-section-5-heading">
+          Motivation Being our Hard Work
+        </h2>
+
+        <Carousel>
+          {CarouselData[2]["section-5-carousel"].map((data, index) => {
+            return (
+              <div
+                key={Math.floor(Math.random() * index + index * Math.SQRT2)}
+                className="page-1-section-5-card-wrap"
+              >
+                  <p>"{data.testimonial}"</p>
+              </div>
+            );
+          })}
+        </Carousel>
+      </section>
 
       {/* <!-- section 5 end  --> */}
 

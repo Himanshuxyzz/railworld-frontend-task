@@ -148,7 +148,7 @@ nav .nav-links-list {
 
 .page-1-section-1 {
   color: white;
-  min-height: 100vh;
+  min-height: 110vh;
   position: relative;
 }
 
@@ -265,6 +265,7 @@ nav .nav-links-list {
   justify-content: center;
   gap: 10px;
   padding: 10px;
+  flex-grow: 1;
 }
 
 .section-1-carousel-card img {
@@ -369,7 +370,7 @@ a {
 
 .page-1-section-3 {
   background-color: #b8a3ba;
-  min-height: 60vh;
+  min-height: 70vh;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -382,15 +383,88 @@ a {
 
 .section-3-carousel-card {
   border: 1px solid white;
-  padding: 20px;
+  /* padding: 20px; */
   border-radius: 10px;
+  background-color: rgba(228, 255, 253, 0.75);
 }
 
 .section-3-carousel-card-wrap {
-  border: 1px solid white;
-  padding: 20px;
+  /* border: 1px solid white; */
+  /* padding: 20px; */
   display: flex;
+  align-items: center;
+  /* height: 50%; */
 }
+
+.section-3-carousel-card-wrap-content {
+  /* border: 1px solid white; */
+  padding: 10px;
+  height: 100%;
+  font-size: 1.2rem;
+  flex-grow: 1;
+}
+
+.section-3-carousel-card-wrap-content:nth-child(1) {
+  /* width: 50%; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-basis: 50%;
+}
+
+.section-3-carousel-card-wrap-content:nth-child(2) {
+  /* width: 50%; */
+  flex-basis: 35%;
+}
+
+.section-3-carousel-card-wrap-content:nth-child(1) h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #1a7e11;
+}
+
+.section-3-carousel-card-wrap-content img {
+  /* width: 100%; */
+  /* width: 90%; */
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.desc-wrap {
+  width: 10%;
+  text-align: center;
+}
+.coupon-wrap {
+  border: 1px solid black;
+  background-color: rgba(191, 255, 251, 0.44);
+  padding: 15px;
+  width: 70%;
+  /* margin: 0 auto; */
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.coupon-wrap p {
+  color: rgba(0, 0, 0, 0.399);
+}
+
+.coupon-wrap span {
+  color: black;
+}
+.page-1-section-3 > .carousel {
+  margin-top: 40px;
+}
+
+.slick-list .slick-track {
+  display: flex;
+  align-items: center;
+}
+
 /* page - 1 section 3 end  */
 
 /* page - 1 section 4   */
@@ -487,7 +561,34 @@ textarea {
 .page-1-section-5 {
   min-height: 60vh;
   padding: 20px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+}
+
+.page-1-section-5-heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.page-1-section-5-card-wrap {
+  background-color: rgba(217, 217, 217, 0.3);
+  padding: 20px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .page-1-section-5-card-wrap div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+.page-1-section-5-card-wrap p {
+  width: 75%;
+  margin: 20px auto;
+  font-size: 2rem;
 }
 
 /* page - 1 section 5 end */
@@ -639,6 +740,7 @@ footer .col {
 
   .page-1-section-1 {
     background-color: #b38e5f;
+    min-height: 170vh;
   }
 
   .bg-overlay {
@@ -657,6 +759,8 @@ footer .col {
 
   .page-1-section-1-container-col.margin-t-sm {
     margin-top: 10%;
+    margin-inline: auto;
+    width: 100%;
   }
 
   .page-1-section-1-heading {
