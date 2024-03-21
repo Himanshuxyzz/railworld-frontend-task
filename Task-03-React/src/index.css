@@ -984,8 +984,9 @@ textarea {
 }
 
 .explore-more-link {
-  padding-block: 20px;
-  padding-inline: 38px;
+  /* padding-block: 20px;
+  padding-inline: 38px; */
+  padding: 20px;
   margin: 0 auto;
   background-color: #cb5f5f;
   color: white;
@@ -1222,7 +1223,7 @@ footer .col {
 
   .page-2-section-1-container {
     flex-direction: column;
-    padding: 0;
+    padding-block: 40px;
     width: 100%;
   }
 
