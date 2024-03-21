@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "../../components/Header";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
@@ -524,9 +525,12 @@ const Menu = () => {
           </div>
         </div>
 
-        <a className="explore-more-link" href="../Menu/explore-more-menu.html">
+        {/* <a className="explore-more-link" href="../Menu/explore-more-menu.html">
           Explore More
-        </a>
+        </a> */}
+        <Link className="explore-more-link" to={"/menu/abc"}>
+          Explore More
+        </Link>
       </section>
 
       <section className="page-2-section-3">
