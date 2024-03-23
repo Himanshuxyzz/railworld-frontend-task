@@ -78,6 +78,19 @@ export const CarouselData = [
       },
     ],
   },
+  {
+    "page-2-carousel": [
+      {
+        imgSrc: "/images/page-2-carousel-1.jpeg",
+      },
+      {
+        imgSrc: "/images/page-2-carousel-2.jpeg",
+      },
+      {
+        imgSrc: "/images/page-2-carousel-3.jpeg",
+      },
+    ],
+  },
 ];
 
 export const MenuData = [
@@ -129,13 +142,12 @@ export const MenuData = [
             price: "120",
             itemImgSrc: "/images/page-2-section-1-small-cover-6.jpeg",
           },
-           {
+          {
             item: "Affogato",
             desc: "A single shot of concentrated coffee",
             price: "110",
             itemImgSrc: "/images/page-2-section-1-small-cover-7.jpeg",
           },
-          
         ],
       },
       {
@@ -172,7 +184,6 @@ export const MenuData = [
             price: "120",
             itemImgSrc: "/images/page-2-section-1-small-cover-13.jpeg",
           },
-          
         ],
       },
     ],

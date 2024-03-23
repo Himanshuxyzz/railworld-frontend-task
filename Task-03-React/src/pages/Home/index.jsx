@@ -27,24 +27,24 @@ window.addEventListener("resize", () => {
 const initialScreenWidth = getCurrentScreen();
 console.log(`Initial screen width is ${initialScreenWidth}px`);
 
+const settings = {
+  // dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+};
+
+const settings_2 = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  nextArrow: false,
+};
+
 const Home = () => {
-  const settings = {
-    // dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-  };
-
-  const settings_2 = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    nextArrow: false,
-  };
-
   return (
     <>
       {/* section - 1 */}

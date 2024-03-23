@@ -2,7 +2,16 @@ import React from "react";
 import NavBar from "../../components/Header";
 import { Link } from "react-router-dom";
 import { formatInInr } from "../../utils/utils";
-import { MenuData } from "../../constants";
+import { CarouselData, MenuData } from "../../constants";
+import { FaGift } from "react-icons/fa";
+import Carousel from "../../components/Carousel";
+
+const settings = {
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+};
 
 const MenuItems = ({ categoryTitle, imgSrc, menuItems, index }) => {
   return (
@@ -128,10 +137,23 @@ const Menu = () => {
         <div className="page-2-section-title">
           <div className="title-wrapper">
             <h3 className="with-icon">
-              BEST OFFERS <i className="fa-solid fa-gift"></i>
+              BEST OFFERS <FaGift />
             </h3>
           </div>
         </div>
+
+        <Carousel settings={settings}>
+          {CarouselData[3]["page-2-carousel"].map((data, index) => {
+            return (
+              <div
+                className="page-2-carousel-card"
+                key={Math.floor(Math.random() * index + index * Math.SQRT2)}
+              >
+                <img src={data.imgSrc} alt={`image-${index}`} />
+              </div>
+            );
+          })}
+        </Carousel>
       </section>
     </>
   );
