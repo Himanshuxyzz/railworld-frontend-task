@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { NavBar } from "../../components/Header";
 import { Link } from "react-router-dom";
 import { MdOutlineArrowRightAlt } from "react-icons/md";
@@ -14,18 +14,18 @@ import { CarouselData } from "../../constants";
 //   console.log(data);
 // });
 
-function getCurrentScreen() {
-  const screenWidth = window.innerWidth;
-  return screenWidth;
-}
+// function getCurrentScreen() {
+//   const screenWidth = window.innerWidth;
+//   return screenWidth;
+// }
 
-window.addEventListener("resize", () => {
-  let width = getCurrentScreen();
-  console.log(`Current screen width is ${width}px`);
-});
+// window.addEventListener("resize", () => {
+//   let width = getCurrentScreen();
+//   console.log(`Current screen width is ${width}px`);
+// });
 
-const initialScreenWidth = getCurrentScreen();
-console.log(`Initial screen width is ${initialScreenWidth}px`);
+// const initialScreenWidth = getCurrentScreen();
+// console.log(`Initial screen width is ${initialScreenWidth}px`);
 
 const settings = {
   // dots: true,
@@ -45,6 +45,23 @@ const settings_2 = {
 };
 
 const Home = () => {
+  useEffect(() => {
+    function getCurrentScreen() {
+      const screenWidth = window.innerWidth;
+      return screenWidth;
+    }
+
+    let test = window.addEventListener("resize", () => {
+      let width = getCurrentScreen();
+      console.log(`Current screen width is ${width}px`);
+    });
+
+    const initialScreenWidth = getCurrentScreen();
+    console.log(`Initial screen width is ${initialScreenWidth}px`);
+
+    return () => window.removeEventListener("resize", test);
+  }, []);
+  
   return (
     <>
       {/* section - 1 */}

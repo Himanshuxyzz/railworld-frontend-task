@@ -5,6 +5,7 @@ import { formatInInr } from "../../utils/utils";
 import { CarouselData, MenuData } from "../../constants";
 import { FaGift } from "react-icons/fa";
 import Carousel from "../../components/Carousel";
+import { IoAddCircle } from "react-icons/io5";
 
 const settings = {
   infinite: true,
@@ -17,7 +18,7 @@ const MenuItems = ({ categoryTitle, imgSrc, menuItems, index }) => {
   return (
     <div className="page-2-section-1-container-col" key={categoryTitle + index}>
       <div className="col-cover-img">
-        <img src={imgSrc} alt={`image - ${index}`} />
+        <img loading="lazy" src={imgSrc} alt={`image - ${index}`} />
         <h3 className="col-cover-img-title">{categoryTitle}</h3>
       </div>
       <div className="col-menu-name">{categoryTitle}</div>
@@ -28,7 +29,8 @@ const MenuItems = ({ categoryTitle, imgSrc, menuItems, index }) => {
               <div className="item-col">
                 <p>{data.item}</p>
                 <div className="menu-add-item-btn">
-                  <i className="fa-solid fa-circle-plus add-item-btn"></i>
+                  {/* <i className="fa-solid fa-circle-plus add-item-btn"></i> */}
+                  <IoAddCircle className="add-item-btn" />
                 </div>
               </div>
               <div className="item-col">
@@ -128,7 +130,7 @@ const Menu = () => {
           </div>
         </div>
 
-        <Link className="explore-more-link" to={"/menu/abc"}>
+        <Link className="explore-more-link" to={"/menu/explore-more"}>
           Explore More
         </Link>
       </section>

@@ -324,6 +324,7 @@ a {
   display: flex;
   align-items: center;
   gap: 20px;
+  height: 50vh;
 }
 
 .page-1-section-2-col:nth-child(1) {
@@ -983,6 +984,10 @@ textarea {
   border-radius: 20px;
 }
 
+.add-item-btn {
+  font-size: 2rem;
+}
+
 .explore-more-link {
   /* padding-block: 20px;
   padding-inline: 38px; */
@@ -1023,6 +1028,93 @@ textarea {
   aspect-ratio: 1/1;
 }
 /* page - 2 section 3 end */
+
+/* page - 2 section 1 explore more */
+
+.explore-more-page {
+  background-color: #252323;
+  min-height: 100vh;
+}
+.menu-page-banner {
+  padding-top: 8%;
+  height: 80vh;
+}
+
+.menu-page-banner img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: top;
+}
+
+/* page - 2 section 1 explore more end */
+
+/* page - 2 section 2 explore more  */
+
+.page-2-section-2-explore-more {
+  margin-top: 9%;
+  min-height: 100vh;
+  border-top: 1px solid #ffff;
+  position: relative;
+  padding: 20px;
+}
+
+.explore-more-title {
+  background-color: #252323;
+  color: white;
+  padding-inline: 10px;
+}
+
+.page-2-section-1-explore-more-container {
+  margin-top: 45px;
+  display: grid;
+  /* grid-template-columns: repeat(3, minmax(250px, 1fr)); */
+  gap: 20px;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.container-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.container-item-cover-img img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 100%;
+  aspect-ratio: 1/1;
+}
+
+.see-more-link {
+  margin-top: 40px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.arrow-down {
+  color: gray;
+  font-size: 1.4rem;
+}
+
+.see-more-link a {
+  color: white;
+  font-size: 1.4rem;
+}
+
+/* page - 2 section 2 explore more end */
+
+/* page - 2 section 1 see more */
+.see-more-page {
+  min-height: 100vh;
+  background-color: #252323;
+}
+/* page - 2 section 1 see more end*/
 
 /* footer */
 footer {
@@ -1177,6 +1269,7 @@ footer .col {
   /* page 1 section 2 */
   .page-1-section-2-container {
     flex-direction: column-reverse;
+    height: unset;
     /* align-items: center; */
   }
 

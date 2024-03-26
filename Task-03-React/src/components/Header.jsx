@@ -1,5 +1,7 @@
 import React from "react";
 import { FaCartShopping } from "react-icons/fa6";
+import { FaSearch } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 
 export const NavBar = ({ variant, customStyle }) => {
@@ -39,7 +41,7 @@ export const NavBar = ({ variant, customStyle }) => {
         </div>
       ) : (
         <div className="nav-search-input">
-          <i className="fa-solid fa-magnifying-glass search-icon"></i>
+          <FaSearch className="search-icon" />
           <input
             className="nav-search-input-field"
             placeholder="search items"

@@ -188,4 +188,52 @@ export const MenuData = [
       },
     ],
   },
+  {
+    "explore-more-page-menu-data": [
+      {
+        imgSrc: "/images/page-2-explore-more-item-1.jpg",
+        caption: "BURGER & SANDWICHES",
+      },
+      {
+        imgSrc: "/images/page-2-explore-more-item-2.jpg",
+        caption: "CHINESE CUISINE",
+      },
+      {
+        imgSrc: "/images/page-2-explore-more-item-3.jpg",
+        caption: "STARTERS",
+      },
+      {
+        imgSrc: "/images/page-2-explore-more-item-4.jpg",
+        caption: "SIDES",
+      },
+      {
+        imgSrc: "/images/page-2-explore-more-item-5.jpg",
+        caption: "SALADS",
+      },
+      {
+        imgSrc: "/images/page-2-explore-more-item-6.jpg",
+        caption: "DESSERTS / ICE-CREAM",
+      },
+      {
+        imgSrc: "/images/page-2-explore-more-item-7.jpeg",
+        caption: "MAIN COURSE",
+      },
+      {
+        imgSrc: "/images/page-2-explore-more-item-8.jpg",
+        caption: "value combo",
+      },
+      {
+        imgSrc: "/images/page-2-explore-more-item-9.jpg",
+        caption: "BEVERAGES",
+      },
+      {
+        imgSrc: "/images/page-2-explore-more-item-10.jpeg",
+        caption: "BLUEBERRY",
+      },
+      {
+        imgSrc: "/images/page-2-explore-more-item-1.jpg",
+        caption: "BURGER & SANDWICHES",
+      },
+    ],
+  },
 ];
