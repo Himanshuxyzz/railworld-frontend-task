@@ -241,7 +241,7 @@ export const MenuData = [
       {
         id: 1,
         title: "BURGER & SANDWICHES",
-        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        bannerCoverSrc:"/images/page-2-menu-category-1-section-1-bg.jpeg",
         "category-items": [
           {
             BURGERS: [
@@ -329,7 +329,7 @@ export const MenuData = [
       {
         id: 2,
         title: "CHINESE CUSINE",
-        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        bannerCoverSrc:"/images/page-2-menu-category-2-section-1-bg.jpeg",
         "category-items": [
           {
             Appetizers: [
@@ -379,7 +379,7 @@ export const MenuData = [
       {
         id: 3,
         title: "STARTERS",
-        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        bannerCoverSrc:"/images/page-2-menu-category-3-section-1-bg.jpeg",
         "category-items": [
           {
             Appetizers: [
@@ -429,7 +429,7 @@ export const MenuData = [
       {
         id: 4,
         title: "SIDES",
-        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        bannerCoverSrc:"/images/page-2-menu-category-4-section-1-bg.jpeg",
         "category-items": [
           {
             Appetizers: [
@@ -479,7 +479,7 @@ export const MenuData = [
       {
         id: 5,
         title: "SALADS",
-        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        bannerCoverSrc:"/images/page-2-menu-category-5-section-1-bg.jpeg",
         "category-items": [
           {
             Appetizers: [
@@ -529,7 +529,7 @@ export const MenuData = [
       {
         id: 6,
         title: "DESSERTS / ICE-CREAM",
-        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        bannerCoverSrc:"/images/page-2-menu-category-6-section-1-bg.jpeg",
         "category-items": [
           {
             Appetizers: [
@@ -579,7 +579,7 @@ export const MenuData = [
       {
         id: 7,
         title: "MAIN COURSE",
-        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        bannerCoverSrc:"/images/page-2-menu-category-7-section-1-bg.jpeg",
         "category-items": [
           {
             Appetizers: [
@@ -629,7 +629,7 @@ export const MenuData = [
       {
         id: 8,
         title: "VALUE COMBO",
-        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        bannerCoverSrc:"/images/page-2-menu-category-8-section-1-bg.jpng.png",
         "category-items": [
           {
             Appetizers: [

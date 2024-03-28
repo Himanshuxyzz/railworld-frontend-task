@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import NavBar from "../../components/Header";
 import MenuBanner from "../../components/MenuBanner";
 import { MenuData } from "../../constants";
@@ -7,18 +7,22 @@ import { Link } from "react-router-dom";
 
 const SeeMoreMenu = () => {
   const [selected, setSelected] = useState(null);
-  const filterSelected = (title) => {
-    setSelected(title);
+  const [bannerImg, setBannerImg] = useState(null);
+  const [sliderPosition, setSliderPosition] = useState(0);
+  const filterSelected = (data) => {
+    setSelected(data.title);
+    setBannerImg(data.bannerCoverSrc);
   };
   useEffect(() => {
     // Set the selected title to the title of the first button when the component mounts
     setSelected(MenuData[2]["see-more-page-menu-data"][0].title);
+    setBannerImg(MenuData[2]["see-more-page-menu-data"][0].bannerCoverSrc);
   }, []); // Empty dependency array to run this effect only once on mount
 
   return (
     <div className="see-more-page">
       <NavBar variant />
-      <MenuBanner src={"/images/page-2-menu-category-1-section-1-bg.jpeg"} />
+      <MenuBanner src={bannerImg} />
 
       <div className="see-more-menu-slider">
         <FaArrowLeft className="icon-left" />
@@ -28,7 +32,7 @@ const SeeMoreMenu = () => {
             return (
               <li key={data.id}>
                 <button
-                  onClick={() => filterSelected(data.title)}
+                  onClick={() => filterSelected(data)}
                   className={`tab ${selected === data.title ? "active" : ""}`}
                 >
                   {data.title}
