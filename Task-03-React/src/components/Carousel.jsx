@@ -6,7 +6,9 @@ import "slick-carousel/slick/slick-theme.css";
 const Carousel = ({ settings, children }) => {
   return (
     <div className="carousel">
-      <Slider {...settings}>{children}</Slider>
+      <Slider {...settings}>
+        {children}
+        </Slider>
     </div>
   );
 };

@@ -61,7 +61,7 @@ const Home = () => {
 
     return () => window.removeEventListener("resize", test);
   }, []);
-  
+
   return (
     <>
       {/* section - 1 */}

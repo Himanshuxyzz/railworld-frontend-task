@@ -236,4 +236,447 @@ export const MenuData = [
       },
     ],
   },
+  {
+    "see-more-page-menu-data": [
+      {
+        id: 1,
+        title: "BURGER & SANDWICHES",
+        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        "category-items": [
+          {
+            BURGERS: [
+              {
+                name: "Tandoori Chicken Tikka Burger",
+                price: "210",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-1.png",
+              },
+              {
+                name: "Paneer Bhurji Burger",
+                price: "169",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-2.png",
+              },
+              {
+                name: "Aloo Tikki Burger",
+                price: "149",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+              {
+                name: "Egg Bhurji Breakfast Burger",
+                price: "129",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-4.png",
+              },
+              {
+                name: "Keema Pav Burger",
+                price: "229",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-5.png",
+              },
+              {
+                name: "Palak Paneer Burger",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-6.png",
+              },
+            ],
+          },
+          {
+            SANDWICHES: [
+              {
+                name: "Bombay Masala Grilled Cheese",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-7.png",
+              },
+              {
+                name: "Chicken Seekh Kebab SANDWICH",
+                price: "179",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-8.png",
+              },
+              {
+                name: "Mumbai Vada Pav",
+                price: "139",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-9.png",
+              },
+              {
+                name: "Butter Chicken Naanwich",
+                price: "169",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-10.png",
+              },
+              {
+                name: "Masala Grilled Fish Sandwich",
+                price: "199",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-11.png",
+              },
+              {
+                name: "Veg Seekh Kebab Sub ",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-12.png",
+              },
+            ],
+          },
+        ],
+      },
+
+      {
+        id: 2,
+        title: "CHINESE CUSINE",
+        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        "category-items": [
+          {
+            Appetizers: [
+              {
+                name: "Spring Rolls Trio",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-13.png",
+              },
+              {
+                name: "Paneer Bhurji Burger",
+                price: "169",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-2.png",
+              },
+              {
+                name: "Aloo Tikki Burger",
+                price: "149",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+              {
+                name: "Egg Bhurji Breakfast Burger",
+                price: "129",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-4.png",
+              },
+              {
+                name: "Keema Pav Burger",
+                price: "229",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-5.png",
+              },
+              {
+                name: "Palak Paneer Burger",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-6.png",
+              },
+            ],
+          },
+          {
+            SANDWICHES: [],
+          },
+        ],
+      },
+      {
+        id: 3,
+        title: "STARTERS",
+        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        "category-items": [
+          {
+            Appetizers: [
+              {
+                name: "Spring Rolls Trio",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-13.png",
+              },
+              {
+                name: "Paneer Bhurji Burger",
+                price: "169",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-2.png",
+              },
+              {
+                name: "Aloo Tikki Burger",
+                price: "149",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+              {
+                name: "Egg Bhurji Breakfast Burger",
+                price: "129",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-4.png",
+              },
+              {
+                name: "Keema Pav Burger",
+                price: "229",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-5.png",
+              },
+              {
+                name: "Palak Paneer Burger",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-6.png",
+              },
+            ],
+          },
+          {
+            SANDWICHES: [],
+          },
+        ],
+      },
+      {
+        id: 4,
+        title: "SIDES",
+        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        "category-items": [
+          {
+            Appetizers: [
+              {
+                name: "Spring Rolls Trio",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-13.png",
+              },
+              {
+                name: "Paneer Bhurji Burger",
+                price: "169",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-2.png",
+              },
+              {
+                name: "Aloo Tikki Burger",
+                price: "149",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+              {
+                name: "Egg Bhurji Breakfast Burger",
+                price: "129",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-4.png",
+              },
+              {
+                name: "Keema Pav Burger",
+                price: "229",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-5.png",
+              },
+              {
+                name: "Palak Paneer Burger",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-6.png",
+              },
+            ],
+          },
+          {
+            SANDWICHES: [],
+          },
+        ],
+      },
+      {
+        id: 5,
+        title: "SALADS",
+        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        "category-items": [
+          {
+            Appetizers: [
+              {
+                name: "Spring Rolls Trio",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-13.png",
+              },
+              {
+                name: "Paneer Bhurji Burger",
+                price: "169",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-2.png",
+              },
+              {
+                name: "Aloo Tikki Burger",
+                price: "149",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+              {
+                name: "Egg Bhurji Breakfast Burger",
+                price: "129",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-4.png",
+              },
+              {
+                name: "Keema Pav Burger",
+                price: "229",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-5.png",
+              },
+              {
+                name: "Palak Paneer Burger",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-6.png",
+              },
+            ],
+          },
+          {
+            SANDWICHES: [],
+          },
+        ],
+      },
+      {
+        id: 6,
+        title: "DESSERTS / ICE-CREAM",
+        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        "category-items": [
+          {
+            Appetizers: [
+              {
+                name: "Spring Rolls Trio",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-13.png",
+              },
+              {
+                name: "Paneer Bhurji Burger",
+                price: "169",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-2.png",
+              },
+              {
+                name: "Aloo Tikki Burger",
+                price: "149",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+              {
+                name: "Egg Bhurji Breakfast Burger",
+                price: "129",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-4.png",
+              },
+              {
+                name: "Keema Pav Burger",
+                price: "229",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-5.png",
+              },
+              {
+                name: "Palak Paneer Burger",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-6.png",
+              },
+            ],
+          },
+          {
+            SANDWICHES: [],
+          },
+        ],
+      },
+      {
+        id: 7,
+        title: "MAIN COURSE",
+        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        "category-items": [
+          {
+            Appetizers: [
+              {
+                name: "Spring Rolls Trio",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-13.png",
+              },
+              {
+                name: "Paneer Bhurji Burger",
+                price: "169",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-2.png",
+              },
+              {
+                name: "Aloo Tikki Burger",
+                price: "149",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+              {
+                name: "Egg Bhurji Breakfast Burger",
+                price: "129",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-4.png",
+              },
+              {
+                name: "Keema Pav Burger",
+                price: "229",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-5.png",
+              },
+              {
+                name: "Palak Paneer Burger",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-6.png",
+              },
+            ],
+          },
+          {
+            SANDWICHES: [],
+          },
+        ],
+      },
+      {
+        id: 8,
+        title: "VALUE COMBO",
+        // "category-item-name-type": ["BURGERS", "SANDWICHES"],
+        "category-items": [
+          {
+            Appetizers: [
+              {
+                name: "Spring Rolls Trio",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-13.png",
+              },
+              {
+                name: "Paneer Bhurji Burger",
+                price: "169",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-2.png",
+              },
+              {
+                name: "Aloo Tikki Burger",
+                price: "149",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+              {
+                name: "Egg Bhurji Breakfast Burger",
+                price: "129",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-4.png",
+              },
+              {
+                name: "Keema Pav Burger",
+                price: "229",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-5.png",
+              },
+              {
+                name: "Palak Paneer Burger",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-6.png",
+              },
+            ],
+          },
+          {
+            SANDWICHES: [],
+          },
+        ],
+      },
+
+    ],
+  },
 ];
