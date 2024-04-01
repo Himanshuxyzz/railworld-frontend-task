@@ -66,7 +66,6 @@ const MenuItems = ({ categoryTitle, imgSrc, menuItems, index }) => {
 const Menu = () => {
   return (
     <>
-      <NavBar variant customStyle={"style-2"} />
 
       <section className="page-2-section-1">
         <div className="hero-cafe-logo">

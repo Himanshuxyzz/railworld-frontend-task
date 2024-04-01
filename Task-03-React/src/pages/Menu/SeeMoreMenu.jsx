@@ -1,8 +1,7 @@
 import React, { useEffect, useState, useRef, useMemo } from "react";
-import NavBar from "../../components/Header";
 import MenuBanner from "../../components/MenuBanner";
 import { MenuData } from "../../constants";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaArrowCircleDown } from "react-icons/fa";
 import { formatInInr } from "../../utils/utils";
 
 const SeeMoreMenu = () => {
@@ -26,7 +25,7 @@ const SeeMoreMenu = () => {
   const memoizedMenuData = useMemo(() => selectedMenuData, [selectedMenuData]);
   return (
     <div className="see-more-page">
-      <NavBar variant />
+      {/* <NavBar variant /> */}
       <MenuBanner src={bannerImg} />
 
       <div className="see-more-menu-slider">
@@ -51,7 +50,6 @@ const SeeMoreMenu = () => {
 
       <section className="page-2-section-2-see-more">
         <div className="see-more-container">
-
           {memoizedMenuData != null &&
             memoizedMenuData.map((data, index) => {
               return (
@@ -85,6 +83,7 @@ const SeeMoreMenu = () => {
               );
             })}
         </div>
+        <FaArrowCircleDown className="down-arrow" />
       </section>
     </div>
   );

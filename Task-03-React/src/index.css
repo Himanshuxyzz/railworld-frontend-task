@@ -1390,13 +1390,8 @@ p:nth-child(3) {
 
 .down-arrow {
   width: 100px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.down-arrow svg {
-  font-size: 1.4rem;
-  background-color: transparent;
+  margin: 40px auto;
+  font-size: 1.5rem;
 }
 
 .value-combo-text {

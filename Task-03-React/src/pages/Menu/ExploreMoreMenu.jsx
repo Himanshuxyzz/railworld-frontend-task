@@ -8,7 +8,7 @@ import { MenuData } from "../../constants";
 const ExploreMoreMenu = () => {
   return (
     <div className="explore-more-page">
-      <NavBar variant />
+      {/* <NavBar variant /> */}
       <MenuBanner src={"/images/page-2-explore-more-bg.png"} />
       <section className="page-2-section-2-explore-more">
         <div className="page-2-section-title explore-more-title">

@@ -258,6 +258,30 @@ export const MenuData = [
                 type: "veg",
                 imgSrc: "/images/see-more-menu-item-2.png",
               },
+              {
+                name: "Aloo Tikki Burger",
+                price: "149",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+              {
+                name: "Egg Bhurji Breakfast Burger",
+                price: "129",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-4.png",
+              },
+              {
+                name: "Keema Pav Burger",
+                price: "229",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-5.png",
+              },
+              {
+                name: "Palak Paneer Burger",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-6.png",
+              },
             ],
           },
           {
@@ -275,6 +299,30 @@ export const MenuData = [
                 type: "non-veg",
                 imgSrc: "/images/see-more-menu-item-8.png",
               },
+              {
+                name: "Mumbai Vada Pav",
+                price: "139",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-9.png",
+              },
+              {
+                name: "Butter Chicken Naanwich",
+                price: "169",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-10.png",
+              },
+              {
+                name: "Masala Grilled Fish Sandwich",
+                price: "199",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-11.png",
+              },
+              {
+                name: "Veg Seekh Kebab Sub",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-12.png",
+              },
             ],
           },
         ],
@@ -288,16 +336,10 @@ export const MenuData = [
             category: "Appetizers",
             items: [
               {
-                name: "Tandoori Chicken Tikka Burger",
-                price: "210",
-                type: "non-veg",
-                imgSrc: "/images/see-more-menu-item-1.png",
-              },
-              {
-                name: "Paneer Bhurji Burger",
-                price: "169",
+                name: "Spring Rolls Trio",
+                price: "159",
                 type: "veg",
-                imgSrc: "/images/see-more-menu-item-2.png",
+                imgSrc: "/images/see-more-menu-item-13.jpeg",
               },
             ],
           },
@@ -305,10 +347,10 @@ export const MenuData = [
             category: "Rice and Noodles",
             items: [
               {
-                name: "Bombay Masala Grilled Cheese",
-                price: "159",
+                name: "Yangzhou Fried RicE",
+                price: "149",
                 type: "veg",
-                imgSrc: "/images/see-more-menu-item-7.png",
+                imgSrc: "/images/see-more-menu-item-14.jpeg",
               },
               {
                 name: "Chicken Seekh Kebab SANDWICH",
@@ -354,415 +396,468 @@ export const MenuData = [
           },
         ],
       },
+      {
+        id: 3,
+        title: "STARTERS",
+        bannerCoverSrc: "/images/page-2-menu-category-3-section-1-bg.jpeg",
+        categoryItems: [
+          {
+            category: "STARTERS",
+            items: [
+              {
+                name: "Crispy Vegetable Spring Rolls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+              {
+                name: "Paneer Tikka Skewers",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/page-2-menu-category-3-section-1-bg.jpeg",
+              },
+              {
+                name: "Stuffed Mushrooms with Spinach and Feta",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-5.png",
+              },
+              {
+                name: "Corn and Cheese Balls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-8.png",
+              },
+              {
+                name: "Chicken Satay with Peanut Sauce",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-12.png",
+              },
+              {
+                name: "Spicy Chicken Wings",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-4.png",
+              },
+              {
+                name: "Fish Tikka Tacos",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-13.jpeg",
+              },
+              {
+                name: "Crispy Vegetable Spring Rolls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+            ],
+          },
+          {
+            category: "MOUTHWATERING COMBOS",
+            items: [
+              {
+                name: "Vegetarian Platter",
+                price: "149",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-14.jpeg",
+              },
+              {
+                name: "Sunset Signature Sampler",
+                price: "139",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-15.png",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 4,
+        title: "SLIDES",
+        bannerCoverSrc: "/images/page-2-menu-category-4-section-1-bg.jpeg",
+        categoryItems: [
+          {
+            category: "STARTERS",
+            items: [
+              {
+                name: "Crispy Vegetable Spring Rolls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+              {
+                name: "Paneer Tikka Skewers",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/page-2-menu-category-3-section-1-bg.jpeg",
+              },
+              {
+                name: "Stuffed Mushrooms with Spinach and Feta",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-5.png",
+              },
+              {
+                name: "Corn and Cheese Balls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-8.png",
+              },
+              {
+                name: "Chicken Satay with Peanut Sauce",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-12.png",
+              },
+              {
+                name: "Spicy Chicken Wings",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-4.png",
+              },
+              {
+                name: "Fish Tikka Tacos",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-13.jpeg",
+              },
+              {
+                name: "Crispy Vegetable Spring Rolls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+            ],
+          },
+          {
+            category: "MOUTHWATERING COMBOS",
+            items: [
+              {
+                name: "Vegetarian Platter",
+                price: "149",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-14.jpeg",
+              },
+              {
+                name: "Sunset Signature Sampler",
+                price: "139",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-15.png",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 5,
+        title: "SALADS",
+        bannerCoverSrc: "/images/page-2-menu-category-5-section-1-bg.jpeg",
+        categoryItems: [
+          {
+            category: "STARTERS",
+            items: [
+              {
+                name: "Crispy Vegetable Spring Rolls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+              {
+                name: "Paneer Tikka Skewers",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/page-2-menu-category-3-section-1-bg.jpeg",
+              },
+              {
+                name: "Stuffed Mushrooms with Spinach and Feta",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-5.png",
+              },
+              {
+                name: "Corn and Cheese Balls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-8.png",
+              },
+              {
+                name: "Chicken Satay with Peanut Sauce",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-12.png",
+              },
+              {
+                name: "Spicy Chicken Wings",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-4.png",
+              },
+              {
+                name: "Fish Tikka Tacos",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-13.jpeg",
+              },
+              {
+                name: "Crispy Vegetable Spring Rolls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+            ],
+          },
+          {
+            category: "MOUTHWATERING COMBOS",
+            items: [
+              {
+                name: "Vegetarian Platter",
+                price: "149",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-14.jpeg",
+              },
+              {
+                name: "Sunset Signature Sampler",
+                price: "139",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-15.png",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 6,
+        title: "DESERTS",
+        bannerCoverSrc: "/images/page-2-menu-category-6-section-1-bg.jpeg",
+        categoryItems: [
+          {
+            category: "STARTERS",
+            items: [
+              {
+                name: "Crispy Vegetable Spring Rolls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+              {
+                name: "Paneer Tikka Skewers",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/page-2-menu-category-3-section-1-bg.jpeg",
+              },
+              {
+                name: "Stuffed Mushrooms with Spinach and Feta",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-5.png",
+              },
+              {
+                name: "Corn and Cheese Balls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-8.png",
+              },
+              {
+                name: "Chicken Satay with Peanut Sauce",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-12.png",
+              },
+              {
+                name: "Spicy Chicken Wings",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-4.png",
+              },
+              {
+                name: "Fish Tikka Tacos",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-13.jpeg",
+              },
+              {
+                name: "Crispy Vegetable Spring Rolls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+            ],
+          },
+          {
+            category: "MOUTHWATERING COMBOS",
+            items: [
+              {
+                name: "Vegetarian Platter",
+                price: "149",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-14.jpeg",
+              },
+              {
+                name: "Sunset Signature Sampler",
+                price: "139",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-15.png",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 7,
+        title: "MAIN COURSE",
+        bannerCoverSrc: "/images/page-2-menu-category-7-section-1-bg.jpeg",
+        categoryItems: [
+          {
+            category: "STARTERS",
+            items: [
+              {
+                name: "Crispy Vegetable Spring Rolls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+              {
+                name: "Paneer Tikka Skewers",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/page-2-menu-category-3-section-1-bg.jpeg",
+              },
+              {
+                name: "Stuffed Mushrooms with Spinach and Feta",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-5.png",
+              },
+              {
+                name: "Corn and Cheese Balls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-8.png",
+              },
+              {
+                name: "Chicken Satay with Peanut Sauce",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-12.png",
+              },
+              {
+                name: "Spicy Chicken Wings",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-4.png",
+              },
+              {
+                name: "Fish Tikka Tacos",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-13.jpeg",
+              },
+              {
+                name: "Crispy Vegetable Spring Rolls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+            ],
+          },
+          {
+            category: "MOUTHWATERING COMBOS",
+            items: [
+              {
+                name: "Vegetarian Platter",
+                price: "149",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-14.jpeg",
+              },
+              {
+                name: "Sunset Signature Sampler",
+                price: "139",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-15.png",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: 8,
+        title: "VALUE COMBO",
+        bannerCoverSrc: "/images//page-2-menu-category-8-section-1-bg.jpng.png",
+        categoryItems: [
+          {
+            category: "STARTERS",
+            items: [
+              {
+                name: "Crispy Vegetable Spring Rolls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+              {
+                name: "Paneer Tikka Skewers",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/page-2-menu-category-3-section-1-bg.jpeg",
+              },
+              {
+                name: "Stuffed Mushrooms with Spinach and Feta",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-5.png",
+              },
+              {
+                name: "Corn and Cheese Balls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-8.png",
+              },
+              {
+                name: "Chicken Satay with Peanut Sauce",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-12.png",
+              },
+              {
+                name: "Spicy Chicken Wings",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-4.png",
+              },
+              {
+                name: "Fish Tikka Tacos",
+                price: "159",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-13.jpeg",
+              },
+              {
+                name: "Crispy Vegetable Spring Rolls",
+                price: "159",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-3.png",
+              },
+            ],
+          },
+          {
+            category: "MOUTHWATERING COMBOS",
+            items: [
+              {
+                name: "Vegetarian Platter",
+                price: "149",
+                type: "non-veg",
+                imgSrc: "/images/see-more-menu-item-14.jpeg",
+              },
+              {
+                name: "Sunset Signature Sampler",
+                price: "139",
+                type: "veg",
+                imgSrc: "/images/see-more-menu-item-15.png",
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
-  // {
-  //   "see-more-page-menu-data": [
-  //     {
-  //       id: 1,
-  //       title: "BURGER & SANDWICHES",
-  //       bannerCoverSrc: "/images/page-2-menu-category-1-section-1-bg.jpeg",
-  //       "category-items": {
-  //         BURGERS: [
-  //           {
-  //             name: "Tandoori Chicken Tikka Burger",
-  //             price: "210",
-  //             type: "non-veg",
-  //             imgSrc: "/images/see-more-menu-item-1.png",
-  //           },
-  //           {
-  //             name: "Paneer Bhurji Burger",
-  //             price: "169",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-2.png",
-  //           },
-  //           {
-  //             name: "Aloo Tikki Burger",
-  //             price: "149",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-3.png",
-  //           },
-  //           {
-  //             name: "Egg Bhurji Breakfast Burger",
-  //             price: "129",
-  //             type: "non-veg",
-  //             imgSrc: "/images/see-more-menu-item-4.png",
-  //           },
-  //           {
-  //             name: "Keema Pav Burger",
-  //             price: "229",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-5.png",
-  //           },
-  //           {
-  //             name: "Palak Paneer Burger",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-6.png",
-  //           },
-  //         ],
-  //         SANDWICHES: [
-  //           {
-  //             name: "Bombay Masala Grilled Cheese",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-7.png",
-  //           },
-  //           {
-  //             name: "Chicken Seekh Kebab SANDWICH",
-  //             price: "179",
-  //             type: "non-veg",
-  //             imgSrc: "/images/see-more-menu-item-8.png",
-  //           },
-  //           {
-  //             name: "Mumbai Vada Pav",
-  //             price: "139",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-9.png",
-  //           },
-  //           {
-  //             name: "Butter Chicken Naanwich",
-  //             price: "169",
-  //             type: "non-veg",
-  //             imgSrc: "/images/see-more-menu-item-10.png",
-  //           },
-  //           {
-  //             name: "Masala Grilled Fish Sandwich",
-  //             price: "199",
-  //             type: "non-veg",
-  //             imgSrc: "/images/see-more-menu-item-11.png",
-  //           },
-  //           {
-  //             name: "Veg Seekh Kebab Sub ",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-12.png",
-  //           },
-  //         ],
-  //       },
-  //     },
-  //     {
-  //       id: 2,
-  //       title: "CHINESE CUISINE",
-  //       bannerCoverSrc: "/images/page-2-menu-category-2-section-1-bg.jpeg",
-  //       "category-items": {
-  //         Appetizers: [
-  //           {
-  //             name: "Spring Rolls Trio",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-13.png",
-  //           },
-  //           {
-  //             name: "Paneer Bhurji Burger",
-  //             price: "169",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-2.png",
-  //           },
-  //           {
-  //             name: "Aloo Tikki Burger",
-  //             price: "149",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-3.png",
-  //           },
-  //           {
-  //             name: "Egg Bhurji Breakfast Burger",
-  //             price: "129",
-  //             type: "non-veg",
-  //             imgSrc: "/images/see-more-menu-item-4.png",
-  //           },
-  //           {
-  //             name: "Keema Pav Burger",
-  //             price: "229",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-5.png",
-  //           },
-  //           {
-  //             name: "Palak Paneer Burger",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-6.png",
-  //           },
-  //         ],
-  //         SANDWICHES: [],
-  //       },
-  //     },
-  //     {
-  //       id: 3,
-  //       title: "STARTERS",
-  //       bannerCoverSrc: "/images/page-2-menu-category-3-section-1-bg.jpeg",
-  //       "category-items": {
-  //         Appetizers: [
-  //           {
-  //             name: "Spring Rolls Trio",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-13.png",
-  //           },
-  //           {
-  //             name: "Paneer Bhurji Burger",
-  //             price: "169",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-2.png",
-  //           },
-  //           {
-  //             name: "Aloo Tikki Burger",
-  //             price: "149",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-3.png",
-  //           },
-  //           {
-  //             name: "Egg Bhurji Breakfast Burger",
-  //             price: "129",
-  //             type: "non-veg",
-  //             imgSrc: "/images/see-more-menu-item-4.png",
-  //           },
-  //           {
-  //             name: "Keema Pav Burger",
-  //             price: "229",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-5.png",
-  //           },
-  //           {
-  //             name: "Palak Paneer Burger",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-6.png",
-  //           },
-  //         ],
-  //         SANDWICHES: [],
-  //       },
-  //     },
-  //     {
-  //       id: 4,
-  //       title: "SIDES",
-  //       bannerCoverSrc: "/images/page-2-menu-category-4-section-1-bg.jpeg",
-  //       "category-items": {
-  //         Appetizers: [
-  //           {
-  //             name: "Spring Rolls Trio",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-13.png",
-  //           },
-  //           {
-  //             name: "Paneer Bhurji Burger",
-  //             price: "169",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-2.png",
-  //           },
-  //           {
-  //             name: "Aloo Tikki Burger",
-  //             price: "149",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-3.png",
-  //           },
-  //           {
-  //             name: "Egg Bhurji Breakfast Burger",
-  //             price: "129",
-  //             type: "non-veg",
-  //             imgSrc: "/images/see-more-menu-item-4.png",
-  //           },
-  //           {
-  //             name: "Keema Pav Burger",
-  //             price: "229",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-5.png",
-  //           },
-  //           {
-  //             name: "Palak Paneer Burger",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-6.png",
-  //           },
-  //         ],
-  //         SANDWICHES: [],
-  //       },
-  //     },
-  //     {
-  //       id: 5,
-  //       title: "SALADS",
-  //       bannerCoverSrc: "/images/page-2-menu-category-5-section-1-bg.jpeg",
-  //       "category-items": {
-  //         Appetizers: [
-  //           {
-  //             name: "Spring Rolls Trio",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-13.png",
-  //           },
-  //           {
-  //             name: "Paneer Bhurji Burger",
-  //             price: "169",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-2.png",
-  //           },
-  //           {
-  //             name: "Aloo Tikki Burger",
-  //             price: "149",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-3.png",
-  //           },
-  //           {
-  //             name: "Egg Bhurji Breakfast Burger",
-  //             price: "129",
-  //             type: "non-veg",
-  //             imgSrc: "/images/see-more-menu-item-4.png",
-  //           },
-  //           {
-  //             name: "Keema Pav Burger",
-  //             price: "229",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-5.png",
-  //           },
-  //           {
-  //             name: "Palak Paneer Burger",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-6.png",
-  //           },
-  //         ],
-  //         SANDWICHES: [],
-  //       },
-  //     },
-  //     {
-  //       id: 6,
-  //       title: "DESSERTS / ICE-CREAM",
-  //       bannerCoverSrc: "/images/page-2-menu-category-6-section-1-bg.jpeg",
-  //       "category-items": {
-  //         Appetizers: [
-  //           {
-  //             name: "Spring Rolls Trio",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-13.png",
-  //           },
-  //           {
-  //             name: "Paneer Bhurji Burger",
-  //             price: "169",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-2.png",
-  //           },
-  //           {
-  //             name: "Aloo Tikki Burger",
-  //             price: "149",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-3.png",
-  //           },
-  //           {
-  //             name: "Egg Bhurji Breakfast Burger",
-  //             price: "129",
-  //             type: "non-veg",
-  //             imgSrc: "/images/see-more-menu-item-4.png",
-  //           },
-  //           {
-  //             name: "Keema Pav Burger",
-  //             price: "229",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-5.png",
-  //           },
-  //           {
-  //             name: "Palak Paneer Burger",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-6.png",
-  //           },
-  //         ],
-  //         SANDWICHES: [],
-  //       },
-  //     },
-  //     {
-  //       id: 7,
-  //       title: "MAIN COURSE",
-  //       bannerCoverSrc: "/images/page-2-menu-category-7-section-1-bg.jpeg",
-  //       "category-items": {
-  //         Appetizers: [
-  //           {
-  //             name: "Spring Rolls Trio",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-13.png",
-  //           },
-  //           {
-  //             name: "Paneer Bhurji Burger",
-  //             price: "169",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-2.png",
-  //           },
-  //           {
-  //             name: "Aloo Tikki Burger",
-  //             price: "149",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-3.png",
-  //           },
-  //           {
-  //             name: "Egg Bhurji Breakfast Burger",
-  //             price: "129",
-  //             type: "non-veg",
-  //             imgSrc: "/images/see-more-menu-item-4.png",
-  //           },
-  //           {
-  //             name: "Keema Pav Burger",
-  //             price: "229",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-5.png",
-  //           },
-  //           {
-  //             name: "Palak Paneer Burger",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-6.png",
-  //           },
-  //         ],
-  //         SANDWICHES: [],
-  //       },
-  //     },
-  //     {
-  //       id: 8,
-  //       title: "VALUE COMBO",
-  //       bannerCoverSrc: "/images/page-2-menu-category-8-section-1-bg.jpng.png",
-  //       "category-items": {
-  //         Appetizers: [
-  //           {
-  //             name: "Spring Rolls Trio",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-13.png",
-  //           },
-  //           {
-  //             name: "Paneer Bhurji Burger",
-  //             price: "169",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-2.png",
-  //           },
-  //           {
-  //             name: "Aloo Tikki Burger",
-  //             price: "149",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-3.png",
-  //           },
-  //           {
-  //             name: "Egg Bhurji Breakfast Burger",
-  //             price: "129",
-  //             type: "non-veg",
-  //             imgSrc: "/images/see-more-menu-item-4.png",
-  //           },
-  //           {
-  //             name: "Keema Pav Burger",
-  //             price: "229",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-5.png",
-  //           },
-  //           {
-  //             name: "Palak Paneer Burger",
-  //             price: "159",
-  //             type: "veg",
-  //             imgSrc: "/images/see-more-menu-item-6.png",
-  //           },
-  //         ],
-  //         SANDWICHES: [],
-  //       },
-  //     },
-  //   ],
-  // },
 ];
