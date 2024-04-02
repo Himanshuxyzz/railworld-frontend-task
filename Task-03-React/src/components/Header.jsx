@@ -36,7 +36,7 @@ export const NavBar = ({ variant, customStyle }) => {
 
           <div className="nav-cart-item-wrapper">
             <FaCartShopping />
-            <a href="./pages/cart.html">My cart</a>
+            <Link to={"/cart"}>My cart</Link>
           </div>
         </div>
       ) : (

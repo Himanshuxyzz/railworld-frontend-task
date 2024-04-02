@@ -1402,6 +1402,14 @@ p:nth-child(3) {
 
 /* page 2 section 2 see more end  */
 
+/* cart page */
+
+.cart-page {
+  background-color: #1f1f1f;
+  min-height: 100vh;
+}
+/* cart page end*/
+
 /* footer */
 footer {
   min-height: 30vh;
