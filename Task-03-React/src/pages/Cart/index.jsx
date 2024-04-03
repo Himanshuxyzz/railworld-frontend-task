@@ -59,20 +59,22 @@ const Cart = () => {
               })}
             </div>
 
-            {/* <div className="cart-items-meal-carousel">
+            <div className="cart-items-meal-carousel">
               <h3>Complete your meal with</h3>
               <Carousel settings={settings}>
-                {CartData[0]["cart-page-section-1"].map((data) => {
+                {CartData[0]["cart-page-section-1"].map((data, index) => {
                   console.log(data);
                   return (
                     <>
-                      <div className="test">1</div>
+                      <div key={index} className="meals-carousel-item">
+                        <img src={data.imgSrc} alt="" />
+                      </div>
                     </>
                   );
                 })}
               </Carousel>
-            </div> */}
-            <Carousel settings={settings}>
+            </div>
+            {/* <Carousel settings={settings}>
               {CartData[0]["cart-page-section-1"].map((data) => {
                 console.log(data);
                 return (
@@ -81,7 +83,7 @@ const Cart = () => {
                   </>
                 );
               })}
-            </Carousel>
+            </Carousel> */}
           </div>
 
           <div className="cart-row-item">
