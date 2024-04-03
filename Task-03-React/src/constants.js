@@ -861,3 +861,32 @@ export const MenuData = [
     ],
   },
 ];
+
+export const CartData = [
+  {
+    "cart-page-section-1": [
+      {
+        name: "Bombay Masala Grilled Cheese",
+        price: 40,
+        imgSrc: "/images/page-2-explore-more-item-1.jpg",
+        itemDesc:
+          "A delightful plant-based option with a savory patty crafted from vegetables and onions, promisingdeliciously satisfying bite.",
+      },
+      {
+        name: "chicken Seekh Kebab Sandwich",
+        price: 70,
+        imgSrc: "/images/page-2-explore-more-item-4.jpg",
+        itemDesc:
+          "A classic favorite featuring tender slices of turkey nestled between soft bread, offering a comforting and fulfilling meal option.",
+      },
+      {
+        name: "Mumbai Vada Pav",
+        price: 80,
+        imgSrc: "/images/page-2-explore-more-item-6.jpg",
+        itemDesc:
+          "A delightful plant-based option with a savory patty crafted from vegetables and onions, promising a deliciously satisfying bite.",
+      },
+      
+    ],
+  },
+];

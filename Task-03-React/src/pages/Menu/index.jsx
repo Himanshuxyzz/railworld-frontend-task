@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "../../components/Header";
 import { Link } from "react-router-dom";
 import { formatInInr } from "../../utils/utils";
 import { CarouselData, MenuData } from "../../constants";
