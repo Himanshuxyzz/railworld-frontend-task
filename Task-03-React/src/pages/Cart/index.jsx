@@ -35,7 +35,10 @@ const Cart = () => {
             <div className="menu-items-cart-wrapper">
               {CartData[0]["cart-page-section-1"].map((item, index) => {
                 return (
-                  <div key={index} className="menu-cart-item gray">
+                  <div
+                    key={index}
+                    className={`menu-cart-item ${index % 2 == 0 ? "gray" : ""}`}
+                  >
                     <div className="menu-item-cover-img">
                       <img src={item.imgSrc} alt={`image-${index}`} />
                     </div>
@@ -63,27 +66,14 @@ const Cart = () => {
               <h3>Complete your meal with</h3>
               <Carousel settings={settings}>
                 {CartData[0]["cart-page-section-1"].map((data, index) => {
-                  console.log(data);
                   return (
-                    <>
-                      <div key={index} className="meals-carousel-item">
-                        <img src={data.imgSrc} alt="" />
-                      </div>
-                    </>
+                    <div key={index} className="meals-carousel-item">
+                      <img src={data.imgSrc} alt="" />
+                    </div>
                   );
                 })}
               </Carousel>
             </div>
-            {/* <Carousel settings={settings}>
-              {CartData[0]["cart-page-section-1"].map((data) => {
-                console.log(data);
-                return (
-                  <>
-                    <div className="test">1</div>
-                  </>
-                );
-              })}
-            </Carousel> */}
           </div>
 
           <div className="cart-row-item">
@@ -150,7 +140,19 @@ const Cart = () => {
 
         <section className="cart-items-recently-ordered">
           <h3>Recently ordered</h3>
-          <div className="recently-ordered-carousel"></div>
+          <div className="recently-ordered-carousel">
+            <Carousel settings={settings}>
+              {CartData[0]["cart-page-section-1"].map((data, index) => {
+                return (
+                  <div className="sm-height">
+                    <div key={index} className="meals-carousel-item">
+                      <img src={data.imgSrc} alt="" />
+                    </div>
+                  </div>
+                );
+              })}
+            </Carousel>
+          </div>
         </section>
       </div>
     </>
