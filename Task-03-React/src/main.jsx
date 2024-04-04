@@ -9,6 +9,7 @@ import ExploreMoreMenu from "./pages/Menu/ExploreMoreMenu.jsx";
 import MenuRouteWrapper from "./pages/Menu/MenuRouteWrapper.jsx";
 import SeeMoreMenu from "./pages/Menu/SeeMoreMenu.jsx";
 import Cart from "./pages/Cart/index.jsx";
+import AboutUs from "./pages/AboutUs/index.jsx";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "cart",
         element: <Cart />,
+      },
+      {
+        path: "about-us",
+        element: <AboutUs />,
       },
     ],
   },
