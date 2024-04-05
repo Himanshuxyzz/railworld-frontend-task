@@ -1686,129 +1686,82 @@ p:nth-child(3) {
 .about-us-page-container {
   background-color: rgba(0, 0, 0, 0.88);
   min-height: 100vh;
-  /* padding: 20px; */
-}
-
-.mt-4 {
-  margin-top: 40px;
-}
-
-.w-70 {
-  width: 70%;
-}
-
-.no-rounded {
-  border-radius: 0;
-  width: 100%;
-}
-
-.bg-none {
-  background-color: unset;
-  color: white;
-}
-
-.page-1-section-2.max-h-70 {
-  min-height: 70vh;
-}
-
-.page-1-section-2-col.flex-50 {
-  flex-basis: 50%;
-}
-
-.h-100 {
-  height: 100%;
-}
-
-.aspect-none {
-  aspect-ratio: 0;
-  height: 70vh;
-}
-
-.page-1-section-2-text-wrapper.w-90 {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.bg-white-50 {
-  background-color: rgba(275, 275, 275, 0.5);
-}
-
-.variant-1 {
-  display: block;
-  padding: 0;
-}
-
-.page-1-section-2-col:nth-child(1) h3 {
-  font-size: 1.8rem;
-  width: 90%;
-  margin: 0 auto;
-}
-
-.bg-black-50 {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-}
-
-.flex-reverse {
-  flex-direction: row-reverse;
-}
-
-.about-us-page-section-4 {
+  padding-block: 10%;
+  padding-inline: 20px;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  min-height: 80vh;
-  max-height: 100vh;
+}
+
+.about-us-page-container p {
   color: white;
+  font-size: 1rem;
+  font-weight: unset;
 }
 
-.about-us-page-section-4-h3 {
-  font-size: 2rem;
-  text-align: center;
-  margin-top: 40px;
-}
-
-.about-us-page-contatiner {
-  border: 1px solid white;
-  padding: 20px;
-  min-height: 50vh;
+.about-us-section {
+  min-height: 60vh;
+  max-height: 60vh;
   display: flex;
   gap: 20px;
 }
 
-.about-us-page-row-item {
-  /* border: 1px solid white; */
-  /* padding: 20px; */
-  flex-basis: 100%;
-  display: flex;
-  background-color: rgba(255, 255, 255, 0.4);
+.about-us-section-items {
+  width: 100%;
 }
 
-/* .about-us-page-row-item .row {
-} */
+.about-us-section-items:nth-child(1) {
+  flex-basis: 68%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
 
-.about-us-page-row-item .row img {
-  width: 100%;
+.about-us-section-items:nth-child(2) {
+  flex-basis: calc(100% - 68%);
+}
+
+.about-us-section-items:nth-child(1) h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+.about-us-section-items:nth-child(1) p {
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+  font-size: 1.45rem;
+  width: 97%;
+}
+
+.about-us-section-items:nth-child(2) img {
+  width: 400px;
   height: 100%;
   object-fit: cover;
+  aspect-ratio: 1/1;
 }
 
-.about-us-page-row-item .row p {
-  width: 80%;
-  margin: 0 auto;
-  font-size: 1.3rem;
-  text-align: center;
+.layout-reverse {
+  flex-direction: row-reverse;
 }
 
-.about-us-page-row-item .row-1 {
-  flex-basis: 40%;
+.img-rounded .about-us-section-items:nth-child(2) img {
+  border-radius: 100%;
 }
 
-.about-us-page-row-item .row-2 {
-  flex-basis: 60%;
-  display: flex;
-  align-items: center;
+.grey-bg {
+  background-color: rgba(255, 255, 255, 0.5);
 }
+
+.grey-bg p {
+  color: black;
+}
+
+.about-us-carousel {
+  background-color: #1f1f1f;
+  flex-direction: column;
+}
+
 /* about us page end */
 
 /* footer */
@@ -2155,19 +2108,49 @@ footer .col {
   }
 
   /* cart page end */
-  
+
   /* about us page */
-  .aspect-none {
-    height: 100%;
+
+  .about-us-page-container {
+    background-color: rgba(0, 0, 0, 0.88);
+    min-height: 100vh;
+    padding-top: 7rem;
+    padding-inline: 10px;
   }
 
-  .variant-1 {
-    padding: 20px;
+  .about-us-page-container p {
+    color: white;
+    font-size: 1rem;
+    font-weight: unset;
   }
 
-  .about-us-page-contatiner {
-    padding: 50px;
+  .about-us-section {
+    min-height: 100vh;
+    max-height: 100%;
+    flex-direction: column-reverse;
   }
+
+  .about-us-section-items:nth-child(1) h3 {
+    font-size: 1.3rem;
+  }
+
+  .about-us-section-items:nth-child(1) p {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .about-us-section-items:nth-child(2) img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+  }
+  .about-us-section:nth-child(2) .about-us-section-items:nth-child(2) img {
+    width: 100%;
+  }
+  .about-us-section:nth-child(3) .about-us-section-items:nth-child(2) img {
+    width: 100%;
+  }
+
   /* about us page end */
 
   /* footer */
