@@ -1706,6 +1706,11 @@ p:nth-child(3) {
   gap: 20px;
 }
 
+.about-us-section h3 {
+  color: white;
+  font-size: 2rem;
+}
+
 .about-us-section-items {
   width: 100%;
 }
@@ -1720,11 +1725,6 @@ p:nth-child(3) {
 
 .about-us-section-items:nth-child(2) {
   flex-basis: calc(100% - 68%);
-}
-
-.about-us-section-items:nth-child(1) h3 {
-  color: white;
-  font-size: 2rem;
 }
 
 .about-us-section-items:nth-child(1) p {
@@ -1760,6 +1760,45 @@ p:nth-child(3) {
 .about-us-carousel {
   background-color: #1f1f1f;
   flex-direction: column;
+}
+
+.about-us-carousel h3 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.about-us-carousel-wrapper {
+  border: 1px solid white;
+  max-height: 35vh;
+}
+.about-us-carousel-card {
+  display: flex;
+  gap: 20px;
+  background-color: rgba(255, 255, 255, 0.4);
+  min-height: 35vh;
+
+  width: 100%;
+}
+
+.about-us-carousel-card-item {
+  width: 100%;
+}
+
+.about-us-carousel-card-item:nth-child(1) {
+  flex-basis: 40%;
+}
+
+.about-us-carousel-card-item:nth-child(2) {
+  flex-basis: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-us-carousel-card-item:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* about us page end */
@@ -2130,7 +2169,7 @@ footer .col {
     flex-direction: column-reverse;
   }
 
-  .about-us-section-items:nth-child(1) h3 {
+  .about-us-section h3 {
     font-size: 1.3rem;
   }
 

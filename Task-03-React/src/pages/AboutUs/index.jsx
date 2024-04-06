@@ -1,5 +1,15 @@
 import React from "react";
 import NavBar from "../../components/Header";
+import Carousel from "../../components/Carousel";
+
+const settings = {
+  className: "center",
+  centerMode: true,
+  infinite: true,
+  centerPadding: "60px",
+  slidesToShow: 3,
+  speed: 500,
+};
 
 const AboutUs = () => {
   return (
@@ -66,7 +76,58 @@ const AboutUs = () => {
           </div>
         </AboutSection>
 
-        <AboutSection customCss={"about-us-carousel"}></AboutSection>
+        <AboutSection customCss={"about-us-carousel"}>
+          <h3>Meet Our Sunset Family</h3>
+
+          <div className="about-us-carousel-wrapper">
+            <Carousel settings={settings}>
+              <div>
+                <div className="about-us-carousel-card">
+                  <div className="about-us-carousel-card-item">
+                    <img src="/images/about-us-section-4-1.jpeg" alt="" />
+                  </div>
+                  <div className="about-us-carousel-card-item">
+                    <p>
+                      "Rohit, the friendly waiter at Sunset Café, effortlessly
+                      connects with regulars, showcasing exceptional
+                      communication skills and spreading warmth to all."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div className="about-us-carousel-card">
+                  <div className="about-us-carousel-card-item">
+                    <img src="/images/about-us-section-4-1.jpeg" alt="" />
+                  </div>
+                  <div className="about-us-carousel-card-item">
+                    <p>
+                      "Rohit, the friendly waiter at Sunset Café, effortlessly
+                      connects with regulars, showcasing exceptional
+                      communication skills and spreading warmth to all."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <div className="about-us-carousel-card">
+                  <div className="about-us-carousel-card-item">
+                    <img src="/images/about-us-section-4-1.jpeg" alt="" />
+                  </div>
+                  <div className="about-us-carousel-card-item">
+                    <p>
+                      "Rohit, the friendly waiter at Sunset Café, effortlessly
+                      connects with regulars, showcasing exceptional
+                      communication skills and spreading warmth to all."
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </Carousel>
+          </div>
+        </AboutSection>
       </div>
     </>
   );
