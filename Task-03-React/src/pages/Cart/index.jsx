@@ -9,8 +9,8 @@ import Carousel from "../../components/Carousel";
 const settings = {
   infinite: true,
   speed: 500,
-  slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToShow: 4,
+  slidesToScroll: 4,
 };
 const Cart = () => {
   //   const Div = useRef(null);
@@ -144,8 +144,8 @@ const Cart = () => {
             <Carousel settings={settings}>
               {CartData[0]["cart-page-section-1"].map((data, index) => {
                 return (
-                  <div className="sm-height">
-                    <div key={index} className="meals-carousel-item">
+                  <div key={index} className="sm-height">
+                    <div className="meals-carousel-item">
                       <img src={data.imgSrc} alt="" />
                     </div>
                   </div>

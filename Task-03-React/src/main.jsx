@@ -10,6 +10,7 @@ import MenuRouteWrapper from "./pages/Menu/MenuRouteWrapper.jsx";
 import SeeMoreMenu from "./pages/Menu/SeeMoreMenu.jsx";
 import Cart from "./pages/Cart/index.jsx";
 import AboutUs from "./pages/AboutUs/index.jsx";
+import ContactUs from "./pages/ContactUs/index.jsx";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "about-us",
         element: <AboutUs />,
+      },
+      {
+        path: "contact-us",
+        element: <ContactUs />,
       },
     ],
   },
