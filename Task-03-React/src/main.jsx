@@ -11,6 +11,7 @@ import SeeMoreMenu from "./pages/Menu/SeeMoreMenu.jsx";
 import Cart from "./pages/Cart/index.jsx";
 import AboutUs from "./pages/AboutUs/index.jsx";
 import ContactUs from "./pages/ContactUs/index.jsx";
+import Account from "./pages/Account/index.jsx";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
       {
         path: "contact-us",
         element: <ContactUs />,
+      },
+      {
+        path: "account",
+        element: <Account />,
       },
     ],
   },
