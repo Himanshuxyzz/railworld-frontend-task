@@ -8,6 +8,7 @@ const SeeMoreMenu = () => {
   const [selected, setSelected] = useState(null);
   const [bannerImg, setBannerImg] = useState(null);
   const [selectedMenuData, setSelectedMenuData] = useState(null);
+
   const filterSelected = (data) => {
     setSelected(data.title);
     setBannerImg(data.bannerCoverSrc);
@@ -22,6 +23,7 @@ const SeeMoreMenu = () => {
       MenuData[2]["see-more-page-menu-data"][0]["categoryItems"]
     );
   }, []); // Empty dependency array to run this effect only once on mount
+  
   const memoizedMenuData = useMemo(() => selectedMenuData, [selectedMenuData]);
   return (
     <div className="see-more-page">

@@ -40,7 +40,7 @@ a {
   align-items: center;
   font-size: 1.4rem;
   color: white;
-  z-index: 5;
+  z-index: 999999;
   /* position: absolute; */
   position: fixed;
   width: 100%;
@@ -1963,7 +1963,8 @@ textarea {
 }
 
 .account-row:nth-child(1) {
-  flex-basis: 20%;
+  flex-basis: 24%;
+  max-width: 24%;
   max-height: 45vh;
   background-color: rgba(0, 0, 0, 0.19);
   border-radius: 20px;
@@ -1974,8 +1975,15 @@ textarea {
 }
 
 .account-sidebar-item {
-  border-left: 4px solid white;
   padding: 8px;
+}
+
+.account-sidebar-item.active {
+  border-left: 4px solid white;
+}
+
+.account-sidebar-item.active button {
+  font-weight: bold;
 }
 
 .account-sidebar-item button {
@@ -1991,6 +1999,18 @@ textarea {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+.account-sidebar-item {
+  transition: opacity 0.3s ease;
+}
+
+.account-sidebar-item.active {
+  opacity: 1;
+}
+
+.account-sidebar-item:not(.active) {
+  opacity: 0.5;
 }
 
 .account-row:nth-child(2) > h3 {

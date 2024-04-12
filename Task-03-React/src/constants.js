@@ -1,3 +1,5 @@
+import { MyAccount } from "./pages/Account";
+
 export const CarouselData = [
   {
     "section-1-carousel": [
@@ -890,3 +892,29 @@ export const CartData = [
     ],
   },
 ];
+
+
+
+
+export const AccountMenu = [
+  {
+    "menuSettings":[
+      {
+        settingName:"My Account",
+        CompoNent: MyAccount,
+      },
+        {
+        settingName:"Account Information",
+        CompoNent: () => "",
+      },
+        {
+        settingName:"Address Book",
+        CompoNent: () => "",
+      },
+        {
+        settingName:"Your Order",
+        CompoNent: () => "",
+      }
+    ]
+  }
+]
