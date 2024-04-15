@@ -1,4 +1,4 @@
-import { MyAccount } from "./pages/Account";
+import { AccountInformation, AddressBook, MyAccount, YourOrder } from "./pages/Account";
 
 export const CarouselData = [
   {
@@ -905,15 +905,15 @@ export const AccountMenu = [
       },
         {
         settingName:"Account Information",
-        CompoNent: () => "",
+        CompoNent:AccountInformation,
       },
         {
         settingName:"Address Book",
-        CompoNent: () => "",
+        CompoNent:AddressBook,
       },
         {
         settingName:"Your Order",
-        CompoNent: () => "",
+        CompoNent:YourOrder,
       }
     ]
   }
