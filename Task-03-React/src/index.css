@@ -2217,6 +2217,73 @@ textarea {
 }
 /* accounts page end */
 
+/* Blog page */
+.blog-page {
+  padding-top: 8rem;
+  min-height: 100vh;
+  background-color: #252323;
+}
+
+.blog-hero-section {
+  width: 800px;
+  margin: 0 auto;
+  height: 420px;
+  border-radius: 47px;
+  overflow: hidden;
+  position: relative;
+}
+
+.blog-hero-bg-overlay {
+  position: absolute;
+  background-color: #332f2f9e;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+}
+
+.blog-hero-bg-overlay div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-hero-bg-overlay div h2 {
+  font-size: 2rem;
+}
+
+.blog-hero-bg-overlay div:nth-child(1) h2 {
+  color: rgba(255, 255, 255, 0.71);
+}
+
+.blog-hero-bg-overlay div:nth-child(2) {
+  flex-direction: column;
+  gap: 10px;
+}
+
+.blog-hero-bg-overlay div:nth-child(2) h2 {
+  color: #bba6a6;
+}
+
+.blog-hero-bg-overlay div:nth-child(2) p:nth-child(2) {
+  width: 90%;
+  color: #e6d0a4;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.blog-hero-section img {
+  filter: saturate(2);
+  width: 800px;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 1/1;
+}
+
+/* Blog page end */
+
 /* footer */
 footer {
   min-height: 30vh;
@@ -2633,6 +2700,39 @@ footer .col {
 
   /* contact us page end */
 
+  /* Blog page */
+  .blog-page {
+    padding-top: 100px;
+  }
+
+  .blog-hero-section {
+    max-width: 95%;
+    max-height: 220px;
+  }
+
+  .blog-hero-section img {
+    width: 100%;
+  }
+
+  .blog-hero-bg-overlay div h2 {
+    font-size: 1rem;
+  }
+
+  .blog-hero-bg-overlay div:nth-child(1) {
+    max-width: 28%;
+  }
+
+  .blog-hero-bg-overlay div:nth-child(2) {
+    padding: 10px;
+  }
+
+  .blog-hero-bg-overlay div:nth-child(2) p:nth-child(2) {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+
+  /* Blog page end */
+
   /* footer */
 
   footer .col:nth-child(1) {
@@ -2671,4 +2771,29 @@ footer .col {
     object-fit: cover;
     aspect-ratio: 1/1;
   }
+
+  /* blog page */
+  .blog-hero-section {
+    max-width: 95%;
+    max-height: 300px;
+  }
+
+  .blog-hero-bg-overlay div h2 {
+    font-size: 1.5rem;
+  }
+
+  .blog-hero-bg-overlay div:nth-child(1) {
+    max-width: unset;
+  }
+
+  .blog-hero-bg-overlay div:nth-child(2) {
+    padding: 10px;
+  }
+
+  .blog-hero-bg-overlay div:nth-child(2) p:nth-child(2) {
+    font-size: unset;
+    width: 90%;
+  }
+
+  /* blog page end */
 }

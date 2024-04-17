@@ -12,6 +12,7 @@ import Cart from "./pages/Cart/index.jsx";
 import AboutUs from "./pages/AboutUs/index.jsx";
 import ContactUs from "./pages/ContactUs/index.jsx";
 import Account from "./pages/Account/index.jsx";
+import Blog from "./pages/Blog/index.jsx";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ const router = createBrowserRouter([
       {
         path: "account",
         element: <Account />,
+      },
+      {
+        path: "blog",
+        element: <Blog />,
       },
     ],
   },
