@@ -279,7 +279,7 @@ a {
 }
 
 .section-1-carousel-card h3,
-a {
+.section-1-carousel-card a {
   color: #d16e43;
   font-weight: bold;
 }
@@ -2219,7 +2219,7 @@ textarea {
 
 /* Blog page */
 .blog-page {
-  padding-top: 8rem;
+  padding-block: 8rem;
   min-height: 100vh;
   background-color: #252323;
 }
@@ -2280,6 +2280,17 @@ textarea {
   object-fit: cover;
   object-position: center;
   aspect-ratio: 1/1;
+}
+
+.latest-blog-carousel-section {
+  margin-top: 40px;
+  border-block: 1px solid #d16e43;
+  min-height: 50vh;
+}
+
+.latest-blog-carousel-item {
+  border: 1px solid white;
+  background-color: white;
 }
 
 /* Blog page end */
