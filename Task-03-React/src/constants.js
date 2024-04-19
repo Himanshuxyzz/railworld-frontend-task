@@ -1,4 +1,9 @@
-import { AccountInformation, AddressBook, MyAccount, YourOrder } from "./pages/Account";
+import {
+  AccountInformation,
+  AddressBook,
+  MyAccount,
+  YourOrder,
+} from "./pages/Account";
 
 export const CarouselData = [
   {
@@ -90,6 +95,62 @@ export const CarouselData = [
       },
       {
         imgSrc: "/images/page-2-carousel-3.jpeg",
+      },
+    ],
+  },
+  {
+    "page-blog-carousel-section-1": [
+      {
+        imgSrc: "/images/page-blog-carousel-1.jpeg",
+        text: "Sip, Savor, Socialize: The Three S's of Café Sunset.",
+      },
+      {
+        imgSrc: "/images/page-blog-carousel-2.jpeg",
+        text: "Café Sunset Chronicles: A Journey Through Flavors and Moments.",
+      },
+      {
+        imgSrc: "/images/page-blog-carousel-3.jpeg",
+        text: "Sunset Sessions: Live Music, Lively Conversations at Café Sunset.",
+      },
+      {
+        imgSrc: "/images/page-blog-carousel-4.jpeg",
+        text: "Sipping Serenity: The Art of Sunset at Café Sunset.",
+      },
+      {
+        imgSrc: "/images/page-blog-carousel-5.jpeg",
+        text: "Bites of Bliss: The Sweet Symphony of Pastries at Café Sunset.",
+      },
+      {
+        imgSrc: "/images/page-blog-carousel-6.jpeg",
+        text: "Flavorful Escapes: Exploring Café Sunset's Seasonal Specialties.",
+      },
+    ],
+  },
+  {
+    "feature-review-carouesl-section-2": [
+      {
+        imgSrc: "/images/see-more-menu-item-14.jpeg",
+        text: "Café Sunset is a hidden gem! The flavors are absolutely exquisite, and the cozy atmosphere makes it the perfect spot for a quiet coffee or a lively gathering. The Sunset Chai is a must-try! Can't wait to visit again - Divya Soni.",
+      },
+      {
+        imgSrc: "/images/see-more-menu-item-13.jpeg",
+        text: "The staff at Café Sunset goes above and beyond to make you feel at home. The artistic vibes, from the décor to the live performances, create a unique and memorable experience. Highly recommended! - Sanowar Khatun",
+      },
+      {
+        imgSrc: "/images/see-more-menu-item-12.png",
+        text: "Its Was Very Delicious..",
+      },
+      {
+        imgSrc: "/images/see-more-menu-item-11.png",
+        text: "The simplicity of the dishes lets the quality of the noodles shine through. A must-visit for any noodle lover! - Ayusha.",
+      },
+      {
+        imgSrc: "/images/see-more-menu-item-10.png",
+        text: "Bites of Bliss: The Sweet Symphony of Pastries at Café Sunset.",
+      },
+      {
+        imgSrc: "/images/see-more-menu-item-9.png",
+        text: "Flavorful Escapes: Exploring Café Sunset's Seasonal Specialties.",
       },
     ],
   },
@@ -888,33 +949,29 @@ export const CartData = [
         itemDesc:
           "A delightful plant-based option with a savory patty crafted from vegetables and onions, promising a deliciously satisfying bite.",
       },
-      
     ],
   },
 ];
 
-
-
-
 export const AccountMenu = [
   {
-    "menuSettings":[
+    menuSettings: [
       {
-        settingName:"My Account",
+        settingName: "My Account",
         CompoNent: MyAccount,
       },
-        {
-        settingName:"Account Information",
-        CompoNent:AccountInformation,
+      {
+        settingName: "Account Information",
+        CompoNent: AccountInformation,
       },
-        {
-        settingName:"Address Book",
-        CompoNent:AddressBook,
+      {
+        settingName: "Address Book",
+        CompoNent: AddressBook,
       },
-        {
-        settingName:"Your Order",
-        CompoNent:YourOrder,
-      }
-    ]
-  }
-]
+      {
+        settingName: "Your Order",
+        CompoNent: YourOrder,
+      },
+    ],
+  },
+];
