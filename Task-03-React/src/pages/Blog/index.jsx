@@ -96,10 +96,6 @@ const Blog = () => {
             </div>
           </div>
         </section>
-
-        <section className="test">
-          <StarRating />
-        </section>
       </div>
     </>
   );

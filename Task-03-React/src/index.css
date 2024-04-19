@@ -2219,7 +2219,7 @@ textarea {
 
 /* Blog page */
 .blog-page {
-  padding-block: 8rem;
+  padding-top: 8rem;
   min-height: 100vh;
   background-color: #252323;
 }
@@ -2900,6 +2900,19 @@ footer .col {
   .blog-hero-bg-overlay div:nth-child(2) p:nth-child(2) {
     font-size: 0.8rem;
     width: 100%;
+  }
+
+  .review-section-wrapper {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .review-section-wrapper h2 {
+    font-size: 2rem;
+  }
+
+  .review-section-input-wrapper input {
+    font-size: 1.1rem;
   }
 
   /* Blog page end */
