@@ -54,6 +54,7 @@ const router = createBrowserRouter([
       {
         path: "blog",
         element: <Blog />,
+        children: [{ path: "/blog/:slug", element: "" }],
       },
     ],
   },

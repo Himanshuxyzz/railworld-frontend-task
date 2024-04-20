@@ -2,8 +2,10 @@ import React from "react";
 import NavBar from "../../components/Header";
 import Carousel from "../../components/Carousel";
 import { Link } from "react-router-dom";
-import { CarouselData } from "../../constants";
+import { BlogData, CarouselData } from "../../constants";
 import StarRating from "../../components/StarRating";
+import { FaLongArrowAltRight } from "react-icons/fa";
+
 const settings = {
   infinite: true,
   speed: 500,
@@ -46,7 +48,30 @@ const Blog = () => {
             </Carousel>
           </div>
         </section>
+
         {/* section - 2 */}
+        <section className="blog-list-section">
+          <h2>Blogs</h2>
+          <div className="blog-list-wrapper">
+            {BlogData[0]["blogPostData"].map((post, index) => {
+              console.log(post);
+              return (
+                <div key={post.id} className="blog-list-item">
+                  <img src={post.coverImg} alt={`cover image - ${index}`} />
+                  <div className="blog-list-item-content">
+                    <h3>{post.title}</h3>
+                    <p>{post.blogSummary}</p>
+                    <Link to={`/blog/${post.slug}`} className="read-more">
+                      Read more{" "}
+                      <FaLongArrowAltRight className="right-arrow-icon" />
+                    </Link>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+        {/* section - 3 */}
 
         <section className="blog-carousel-section">
           <h2>FEATURED REVIEW VIDEOS</h2>
@@ -77,7 +102,7 @@ const Blog = () => {
           </div>
         </section>
 
-        {/* section - 3 */}
+        {/* section - 4 */}
         <section className="review-section">
           <div className="review-section-wrapper">
             <h2>Share Your Experience !</h2>

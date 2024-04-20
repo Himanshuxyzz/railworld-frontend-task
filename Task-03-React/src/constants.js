@@ -975,3 +975,60 @@ export const AccountMenu = [
     ],
   },
 ];
+
+export const BlogData = [
+  {
+    blogPostData: [
+      {
+        id: 1,
+        title: "Exclusive",
+        coverImg: "/images/page-blog-carousel-1.jpeg",
+        blogSummary:
+          "Dive into a refreshing symphony of flavors with our Mango Tango Fusion Salad. Crisp mixed greens, juicy mango slices, and cherry tomatoes are tossed with a zesty mango-lime dressing, creating a burst of tropical goodness on your palate. Topped with grilled chicken for a protein boost and garnished with crunchy almond slivers.",
+          slug:"exclusive"
+      },
+      {
+        id: 2,
+        title: "Café Sunset Chronicles: A Journey Through Flavors and Moments",
+        coverImg: "/images/page-blog-carousel-2.jpeg",
+        blogSummary:
+          "Welcome to the vibrant tapestry of Café Sunset, where every cup tells a story, and every moment is a cherished chapter in our culinary odyssey. Join us as we embark on a captivating journey, unveiling the essence of Café Sunset through its diverse flavors and unforgettable moments",
+          slug:"café-sunset-chronicles"
+      },
+      {
+        id: 3,
+        title:
+          "Sunset Sessions: Live Music, Lively Conversations at Café Sunset",
+        coverImg: "/images/page-blog-carousel-3.jpeg",
+        blogSummary:
+          "Step into the magical realm of Café Sunset, where the Sunset Sessions unfold – an enchanting fusion of live music and lively conversations that elevates your dining experience to new heights. In this blog, we invite you to explore the rhythmic heartbeat of our café, where melodies mingle with flavors, creating an ambiance that resonates long after the last note fades away.",
+          slug:"sunset-sessions"
+      },
+      {
+        id: 4,
+        title: "Sipping Serenity: The Art of Sunset at Café Sunset",
+        coverImg: "/images/page-blog-carousel-4.jpeg",
+        blogSummary:
+          "As the sun gracefully descends, casting hues of amber and gold across the sky, Café Sunset emerges as a sanctuary where time slows, and the art of sipping becomes an ode to serenity. Join us on a poetic journey through the evening, where every cup holds the essence of twilight and the tranquil ambiance creates a canvas for moments to unfold.",
+          slug:"sipping-serenity"
+
+      },
+      {
+        id: 5,
+        title: "Bites of Bliss: The Sweet Symphony of Pastries at Café Sunset",
+        coverImg: "/images/page-blog-carousel-5.jpeg",
+        blogSummary:
+          "Indulge your senses in a symphony of sweetness at Café Sunset, where every pastry is a delightful note in the grand composition of flavors. Join us on a journey through our delectable selection, where each bite is a moment of bliss crafted with precision and passion.",
+          slug:"bites-of-bliss"
+      },
+      {
+        id: 6,
+        title: "Flavorful Escapes: Exploring Café Sunset's Seasonal Specialties",
+        coverImg: "/images/page-blog-carousel-6.jpeg",
+        blogSummary:
+          "Embark on a culinary journey with Café Sunset as we unveil our Seasonal Specialties—a menu that mirrors the changing landscapes of nature. From the crisp notes of autumn to the vibrant hues of summer, each dish is a flavorful escape that captures the essence of the season.",
+          slug:"flavorful-escapes"
+      },
+    ],
+  },
+];
