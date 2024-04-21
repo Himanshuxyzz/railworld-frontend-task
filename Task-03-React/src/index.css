@@ -2518,6 +2518,19 @@ textarea {
   font-size: 1.5rem;
 }
 
+/* post page */
+.post-page {
+  padding-inline: 20px;
+}
+
+.post-page-hero-section {
+  min-height: 50vh;
+  border: 1px solid white;
+}
+
+
+/* post page end*/
+
 /* Blog page end */
 
 /* footer */

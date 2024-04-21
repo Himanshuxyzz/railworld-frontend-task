@@ -13,6 +13,8 @@ import AboutUs from "./pages/AboutUs/index.jsx";
 import ContactUs from "./pages/ContactUs/index.jsx";
 import Account from "./pages/Account/index.jsx";
 import Blog from "./pages/Blog/index.jsx";
+import BlogRouteWrapper from "./pages/Blog/BlogRouteWrapper.jsx";
+import Post from "./pages/Blog/Post.jsx";
 
 const router = createBrowserRouter([
   {
@@ -53,8 +55,18 @@ const router = createBrowserRouter([
       },
       {
         path: "blog",
-        element: <Blog />,
-        children: [{ path: "/blog/:slug", element: "" }],
+        // element: <Blog />,
+        element: <BlogRouteWrapper />,
+        children: [
+          {
+            path: "",
+            element: <Blog />,
+          },
+          {
+            path: "post/:slug",
+            element: <Post />,
+          },
+        ],
       },
     ],
   },
